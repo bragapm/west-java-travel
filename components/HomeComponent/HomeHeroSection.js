@@ -142,6 +142,8 @@ export const HomeHeroSection = () => {
                     layout='fill'
                     objectFit='cover'
                     className='hero-img-1 absolute'
+                    quality={75}
+                    priority={true}
                 />
                 <Image
                     src='/v1635751520/west-java-travel/img-hero-2_dk8hmk.png'
@@ -149,6 +151,8 @@ export const HomeHeroSection = () => {
                     layout='fill'
                     objectFit='cover'
                     className='hero-img-2 absolute'
+                    quality={75}
+                    priority={true}
                 />
                 <Image
                     src='/v1635751523/west-java-travel/img-hero-3_rz0d8f.png'
@@ -156,6 +160,8 @@ export const HomeHeroSection = () => {
                     layout='fill'
                     objectFit='cover'
                     className='hero-img-3 absolute'
+                    quality={75}
+                    priority={true}
                 />
                 <Image
                     src='/v1635751512/west-java-travel/img-hero-1_t7jpua.png'
@@ -163,6 +169,8 @@ export const HomeHeroSection = () => {
                     layout='fill'
                     objectFit='cover'
                     className='hero-img-4 absolute'
+                    quality={75}
+                    priority={true}
                 />
             </div>
             <div className='w-screen h-[10vh] px-20 absolute bottom-0 hidden md:block'>

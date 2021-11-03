@@ -6,8 +6,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      spacing: {
+        '22': '5.6rem',
+       },
+      scale: {
+        '60': '.60',
+      },
       animation: {
         'autoscroll': 'autoscroll 60s linear infinite',
+        'autoscrollmobile': 'autoscrollmobile 30s linear infinite',
       },
       keyframes: {
         autoscroll: {
@@ -15,7 +22,15 @@ module.exports = {
             transform: 'translate3d(0, 0, 0)'
           },
           '100%': {
-            transform: 'translate3d(-2310px, 0, 0)'
+            transform: 'translate3d(-2302px, 0, 0)'
+          }
+        },
+        autoscrollmobile: {
+          '0%': {
+            transform: 'translate3d(0, 0, 0)'
+          },
+          '100%': {
+            transform: 'translate3d(-1151px, 0, 0)'
           }
         }
       },
