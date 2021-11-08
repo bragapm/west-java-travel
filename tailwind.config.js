@@ -38,6 +38,7 @@ module.exports = {
         '2lg': '0.625rem',
       },
       fontSize: {
+        '2.5xl': '1.625rem',
         '4.5xl': '2.813rem',
         '5.5xl': '3.125rem',
         '7.5xl': '5rem',
@@ -49,21 +50,26 @@ module.exports = {
       },
       colors: {
         'primary': '#086CB4',
+        'secondary': '#011F56',
         'yellow': '#FDD24A',
         'orange': '#FB8500',
         'blue': '#63BFE8',
         'green': '#3BC56D',
         'red': '#E74D4C',
+        'bordercolor': '#CBD9EA',
       },
       textColor: {
         'primary': '#086CB4',
         'dark': '#000E22',
         'neutral': '#3C4B62',
+        'yellow': '#FCBD0F',
       }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ["group-hover"],
+    },
   },
   plugins: [
     plugin(function ({ addUtilities }) {
@@ -80,6 +86,9 @@ module.exports = {
           'border': '1px solid rgba(255, 255, 255, 0.4)',
           'box-sizing': 'border-box',
           'backdrop-filter': 'blur(4px)'
+        },
+        '.text-shadow': {
+          'text-shadow': '0px 4px 11px #000000',
         }
       }
 

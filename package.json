@@ -8,6 +8,7 @@
     "deploy": "aws s3 sync out s3://westjavatravel.com"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.1",
     "motion": "^10.4.0",
     "next": "latest",
     "react": "^17.0.2",

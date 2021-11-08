@@ -15,14 +15,14 @@ export const HomeAboutSection = () => {
                 </div>
                 <div className='bg-yellow rounded-full w-24 md:w-[15.688rem] h-24 md:h-[15.688rem]' />
             </div>
-            <div className='flex flex-col z-10'>
+            <div className='flex flex-col z-10 px-5 md:px-40'>
                 <HomeSectionTitle title='ABOUT US' />
-                <p className='text-primary font-karla font-bold'></p>
-                <h1 className='text-dark font-montserrat font-light text-3xl md:text-5.5xl mt-5'>Kenapa Berlibur Di</h1>
-                <h1 className='text-dark font-montserrat font-bold italic text-5.5xl md:text-7.5xl md:-translate-y-4'>Jawa Barat</h1>
-                <h1 className='text-neutral font-karla max-w-[50rem] mt-5 text-sm md:text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien sapien semper laoreet duis facilisis nisl risus vel. Velit nisl tincidunt dictum urna molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien sapien semper laoreet duis facilisis nisl risus vel. Velit nisl tincidunt dictum urna molestie.</h1>
-                <HomeGallerySection />
+                <h1 className='text-dark font-montserrat font-light text-3xl md:text-5.5xl mt-5 md:ml-9'>Kenapa Berlibur Di</h1>
+                <h1 className='text-dark font-montserrat font-bold italic text-5.5xl md:text-7.5xl md:ml-9'>Jawa Barat</h1>
+                <h1 className='text-neutral font-karla max-w-[50rem] mt-5 text-sm md:text-base md:ml-9 md:leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien sapien semper laoreet duis facilisis nisl risus vel. Velit nisl tincidunt dictum urna molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien sapien semper laoreet duis facilisis nisl risus vel. Velit nisl tincidunt dictum urna molestie.</h1>
             </div>
+            <HomeGallerySection />
+
         </section>
     )
 }
