@@ -64,7 +64,7 @@ export const HomeDestinationSection = () => {
                         </div>
                     </div>
                 </div>
-                <a className='uppercase text-white font-karla text-sm bg-secondary mt-6 max-w-[174px] py-4 px-6 rounded-full text-center md:mr-9'>more in west java</a>
+                <a className='uppercase text-white font-karla text-sm bg-secondary mt-6 max-w-[174px] py-4 px-6 rounded-full text-center md:mr-9 z-10'>more in west java</a>
             </div>
         </section>
     )

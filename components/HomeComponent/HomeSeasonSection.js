@@ -7,7 +7,7 @@ import MemoIcSun from '../CustomIcons/IcSun'
 
 export const HomeSeasonSection = () => {
     return (
-        <section className='py-20 z-20 relative'>
+        <section className='md:py-20 py-16 z-20 relative'>
             <div className='flex flex-col z-10 px-5 md:px-20'>
                 <HomeSectionTitle title='Season highlight' />
                 <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9 md:max-w-[650px] md:leading-tight z-10'>Nikmati Setiap Musim Di Jawa Barat</h3>

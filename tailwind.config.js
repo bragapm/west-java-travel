@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       spacing: {
         '22': '5.6rem',
-       },
+      },
       scale: {
         '60': '.60',
       },
@@ -38,6 +38,7 @@ module.exports = {
         '2lg': '0.625rem',
       },
       fontSize: {
+        '1.5xl': '1.375rem',
         '2.5xl': '1.625rem',
         '4.5xl': '2.813rem',
         '5.5xl': '3.125rem',
@@ -89,7 +90,23 @@ module.exports = {
         },
         '.text-shadow': {
           'text-shadow': '0px 4px 11px #000000',
-        }
+        },
+        '.oneline-text': {
+          'overflow': 'hidden',
+          'text-overflow': 'ellipsis',
+          'display': '-webkit-box',
+          '-webkit-line-clamp': '1',
+          'line-clamp': '1',
+          '-webkit-box-orient': 'vertical'
+        },
+        '.twoline-text': {
+          'overflow': 'hidden',
+          'text-overflow': 'ellipsis',
+          'display': '-webkit-box',
+          '-webkit-line-clamp': '2',
+          'line-clamp': '2',
+          '-webkit-box-orient': 'vertical'
+        },
       }
 
       addUtilities(newUtilities)
