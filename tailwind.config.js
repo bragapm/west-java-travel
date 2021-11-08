@@ -40,6 +40,7 @@ module.exports = {
       fontSize: {
         '1.5xl': '1.375rem',
         '2.5xl': '1.625rem',
+        '3.5xl': '2rem',
         '4.5xl': '2.813rem',
         '5.5xl': '3.125rem',
         '7.5xl': '5rem',
@@ -47,7 +48,8 @@ module.exports = {
       },
       fontFamily: {
         'karla': ['"Karla"'],
-        'montserrat': ['"Montserrat"']
+        'montserrat': ['"Montserrat"'],
+        'nothing-you-could-do': ['"Nothing You Could Do"'],
       },
       colors: {
         'primary': '#086CB4',
@@ -61,6 +63,7 @@ module.exports = {
       },
       textColor: {
         'primary': '#086CB4',
+        'blue': '#3B9BD2',
         'dark': '#000E22',
         'neutral': '#3C4B62',
         'yellow': '#FCBD0F',

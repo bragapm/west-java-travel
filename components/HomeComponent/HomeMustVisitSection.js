@@ -17,8 +17,8 @@ export const HomeMustVisitSection = () => {
                     </div>
                     <div className='flex flex-col md:flex-row pt-8 md:pt-0 space-y-4 md:space-y-0 md:space-x-5'>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -30,8 +30,8 @@ export const HomeMustVisitSection = () => {
                             </div>
                         </div>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -43,8 +43,8 @@ export const HomeMustVisitSection = () => {
                             </div>
                         </div>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -68,8 +68,8 @@ export const HomeMustVisitSection = () => {
                         </a>                    </div>
                     <div className='flex flex-col md:flex-row pt-8 md:pt-0 space-y-4 md:space-y-0 md:space-x-5'>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -81,8 +81,8 @@ export const HomeMustVisitSection = () => {
                             </div>
                         </div>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -94,8 +94,8 @@ export const HomeMustVisitSection = () => {
                             </div>
                         </div>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -119,8 +119,8 @@ export const HomeMustVisitSection = () => {
                         </a>                    </div>
                     <div className='flex flex-col md:flex-row pt-8 md:pt-0 space-y-4 md:space-y-0 md:space-x-5'>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -132,8 +132,8 @@ export const HomeMustVisitSection = () => {
                             </div>
                         </div>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -145,8 +145,8 @@ export const HomeMustVisitSection = () => {
                             </div>
                         </div>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -170,8 +170,8 @@ export const HomeMustVisitSection = () => {
                         </a>                    </div>
                     <div className='flex flex-col md:flex-row pt-8 md:pt-0 space-y-4 md:space-y-0 md:space-x-5'>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -183,8 +183,8 @@ export const HomeMustVisitSection = () => {
                             </div>
                         </div>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -196,8 +196,8 @@ export const HomeMustVisitSection = () => {
                             </div>
                         </div>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -221,8 +221,8 @@ export const HomeMustVisitSection = () => {
                         </a>                    </div>
                     <div className='flex flex-col md:flex-row pt-8 md:pt-0 space-y-4 md:space-y-0 md:space-x-5'>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -234,8 +234,8 @@ export const HomeMustVisitSection = () => {
                             </div>
                         </div>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>
@@ -247,8 +247,8 @@ export const HomeMustVisitSection = () => {
                             </div>
                         </div>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
-                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md overflow-hidden flex-none'>
-                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md hover:scale-110 transition duration-300' />
+                            <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                <img src='img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
                             </div>
                             <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
                                 <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-base'>Green Canyon</h6>

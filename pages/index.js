@@ -5,6 +5,7 @@ import { HomeHeroSection } from '../components/HomeComponent/HomeHeroSection'
 import { HomeMapSection } from '../components/HomeComponent/HomeMapSection'
 import { HomeMustVisitSection } from '../components/HomeComponent/HomeMustVisitSection'
 import { HomeSeasonSection } from '../components/HomeComponent/HomeSeasonSection'
+import { HomeStorySection } from '../components/HomeComponent/HomeStorySection'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HomeSeasonSection />
       <HomeAttractionSection />
       <HomeMustVisitSection />
+      <HomeStorySection />
     </div>
   )
 }
