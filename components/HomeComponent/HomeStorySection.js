@@ -20,7 +20,7 @@ export const HomeStorySection = () => {
                         setisPlaying('?autoplay=1');
                     }}
                     className='group mt-5 md:mt-0 relative w-full md:w-[552px] h-[230px] md:h-[380px] flex-none'>
-                    <div className='group-hover:opacity-0 group-hover:scale-125 transition-all duration-300 overflow-hidden rounded-2lg w-full h-full z-40'>
+                    <div className='group-hover:opacity-0 group-hover:scale-125 transition-all duration-500 overflow-hidden rounded-2lg w-full h-full z-40'>
                         <img src='img-sample-home-story.jpg' alt='img-placeholder' className='w-full h-full object-cover object-center' />
                         <div className='w-full h-full bg-black absolute top-0 bg-opacity-20 rounded-2lg' />
                         <div className='w-full h-full absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center'>
@@ -29,7 +29,7 @@ export const HomeStorySection = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='absolute z-0 top-0 overflow-hidden rounded-2lg hidden opacity-0 group-hover:block group-hover:opacity-100 transition duration-300'>
+                    <div className='absolute z-0 top-0 overflow-hidden rounded-2lg hidden opacity-0 group-hover:block group-hover:opacity-100 transition duration-500'>
                         <iframe
                             src={`https://www.youtube.com/embed/6WbJYry2zg4${isPlaying}`}
                             frameBorder='0'
