@@ -9,10 +9,12 @@ import { HomeMapSection } from '../components/HomeComponent/HomeMapSection'
 import { HomeMustVisitSection } from '../components/HomeComponent/HomeMustVisitSection'
 import { HomeSeasonSection } from '../components/HomeComponent/HomeSeasonSection'
 import { HomeStorySection } from '../components/HomeComponent/HomeStorySection'
+import { Navbar } from '../components/Navbar'
 
 export default function Home() {
   return (
     <div className='overflow-hidden'>
+      <Navbar />
       <HomeHeroSection />
       <HomeAboutSection />
       <HomeMapSection />

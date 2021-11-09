@@ -176,7 +176,7 @@ export const HomeHeroSection = () => {
             <div className='w-screen h-[10vh] px-20 absolute bottom-0 hidden md:block'>
                 <div className='bg-white w-full h-full rounded-t-3xl' />
             </div>
-            <div className='w-screen h-screen absolute top-0 flex flex-col justify-center md:pl-20'>
+            <div className='w-screen h-screen absolute top-0 flex flex-col justify-center md:pl-20 pt-28'>
                 <div className='flex flex-col md:flex-row items-start md:items-center'>
                     <div className='flex flex-col md:pb-24 md:pr-0 pr-10 px-5 md:px-0'>
                         <div className='md:max-h-[12rem] max-h-[6rem] overflow-hidden'>

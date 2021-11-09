@@ -71,7 +71,7 @@ export const HomeGuideSection = () => {
                     <div className='bg-blue rounded-full w-6 md:w-[3.75rem] h-6 md:h-[3.75rem] mb-10 md:mb-16' />
                 </div>
                 <div className='bg-yellow rounded-full w-24 md:w-[15.688rem] h-24 md:h-[15.688rem]' />
-            </div>
+            </div> 
         </section>
     )
 }

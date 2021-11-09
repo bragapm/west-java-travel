@@ -60,6 +60,7 @@ module.exports = {
         'green': '#3BC56D',
         'red': '#E74D4C',
         'bordercolor': '#CBD9EA',
+        'neutral': '#3C4B62',
       },
       textColor: {
         'primary': '#086CB4',
