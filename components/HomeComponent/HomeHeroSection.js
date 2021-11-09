@@ -178,7 +178,7 @@ export const HomeHeroSection = () => {
             </div>
             <div className='w-screen h-screen absolute top-0 flex flex-col justify-center md:pl-20'>
                 <div className='flex flex-col md:flex-row items-start md:items-center'>
-                    <div className='flex flex-col md:pb-24 md:pr-0 pr-10'>
+                    <div className='flex flex-col md:pb-24 md:pr-0 pr-10 px-5 md:px-0'>
                         <div className='md:max-h-[12rem] max-h-[6rem] overflow-hidden'>
                             <div ref={heroTitle} className='flex flex-col'>
                                 <h1 className='md:text-7.7xl text-4.5xl font-bold font-montserrat text-gradient pt-1'>PANTAI 1<br />MADASARI</h1>
@@ -196,34 +196,34 @@ export const HomeHeroSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='py-8 md:py-16 overflow-hidden'>
-                        <div ref={heroCarousel} className='flex md:flex-row md:ml-40 md:space-x-0 space-x-5'>
-                            <div ref={heroImgCarousel} className='min-w-[10rem] md:min-w-[16.875rem] hero-carousel-1'>
+                    <div className='py-8 md:py-16 overflow-hidden w-full'>
+                        <div ref={heroCarousel} className='flex md:flex-row ml-16 md:ml-40'>
+                            <div ref={heroImgCarousel} className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-1 pr-2 md:pr-0'>
                                 <img src='img-hero-carousel-1.png' alt='img-carousel' className='rounded-2lg' />
                             </div>
-                            <div className='min-w-[10rem] md:min-w-[16.875rem] hero-carousel-2'>
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-2 pr-2 md:pr-0'>
                                 <img src='img-hero-carousel-2.png' alt='img-carousel' className='rounded-2lg' />
                             </div>
-                            <div className='min-w-[10rem] md:min-w-[16.875rem] hero-carousel-3'>
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-3 pr-2 md:pr-0'>
                                 <img src='img-hero-carousel-3.png' alt='img-carousel' className='rounded-2lg' />
                             </div>
-                            <div className='min-w-[10rem] md:min-w-[16.875rem] hero-carousel-4'>
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-4 pr-2 md:pr-0'>
                                 <img src='img-hero-carousel-1.png' alt='img-carousel' className='rounded-2lg' />
                             </div>
-                            <div className='min-w-[10rem] md:min-w-[16.875rem]'>
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] pr-2 md:pr-0'>
                                 <img src='img-hero-carousel-2.png' alt='img-carousel' className='rounded-2lg' />
                             </div>
-                            <div className='min-w-[10rem] md:min-w-[16.875rem]'>
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] pr-2 md:pr-0'>
                                 <img src='img-hero-carousel-3.png' alt='img-carousel' className='rounded-2lg' />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row md:-translate-y-28 pr-5 md:pr-0 space-y-3 space-x-0 md:space-y-0 md:space-x-3'>
-                    <button className='text-karla bg-white px-6 py-[1.125rem] rounded-full text-lg font-bold text-dark'>
+                <div className='flex flex-col-reverse md:px-0 px-5 md:flex-row md:-translate-y-28 pr-5 md:pr-0 space-y-3 space-x-0 md:space-y-0 md:space-x-3'>
+                    <button className='text-karla bg-white px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-dark mt-3 md:mt-0'>
                         DISCOVER MORE
                         </button>
-                    <button className='text-karla bg-glassmorphic px-6 py-[1.125rem] rounded-full text-lg font-bold text-white flex flex-row items-center justify-center'>
+                    <button className='text-karla bg-glassmorphic px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-white flex flex-row items-center justify-center'>
                         EXPLORE NOW
                             <img src='ic-cirlce-arrow.svg' className='ml-4' />
                     </button>
