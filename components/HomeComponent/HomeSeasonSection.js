@@ -25,111 +25,111 @@ export const HomeSeasonSection = () => {
                     children={[
                         <div key='1' className='pt-8 flex flex-row max-w-[100vw] overflow-scroll pb-5'>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Januari</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Rainy</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Januari</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Rainy</p>
                                 </div>
                                 <img src='img-home-jan.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-center group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Februari</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Winter</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Februari</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Winter</p>
                                 </div>
                                 <img src='img-home-feb.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Maret</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Summer</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Maret</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Summer</p>
                                 </div>
                                 <img src='img-home-maret.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>April</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Summer</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>April</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Summer</p>
                                 </div>
                                 <img src='img-home-april.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Mei</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Summer</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Mei</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Summer</p>
                                 </div>
                                 <img src='img-home-may.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                         </div>,
                         <div key='2' className='pt-8 flex flex-row max-w-[100vw] overflow-scroll pb-5'>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Januari</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Rainy</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Januari</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Rainy</p>
                                 </div>
                                 <img src='img-home-jan.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-center group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Februari</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Winter</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Februari</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Winter</p>
                                 </div>
                                 <img src='img-home-feb.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Maret</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Summer</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Maret</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Summer</p>
                                 </div>
                                 <img src='img-home-maret.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>April</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Summer</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>April</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Summer</p>
                                 </div>
                                 <img src='img-home-april.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Mei</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Summer</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Mei</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Summer</p>
                                 </div>
                                 <img src='img-home-may.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                         </div>,
                         <div key='3' className='pt-8 flex flex-row max-w-[100vw] overflow-scroll pb-5'>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Januari</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Rainy</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Januari</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Rainy</p>
                                 </div>
                                 <img src='img-home-jan.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-center group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Februari</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Winter</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Februari</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Winter</p>
                                 </div>
                                 <img src='img-home-feb.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Maret</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Summer</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Maret</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Summer</p>
                                 </div>
                                 <img src='img-home-maret.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>April</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Summer</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>April</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Summer</p>
                                 </div>
                                 <img src='img-home-april.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
                             <div className='h-[293px] md:h-[450px] w-[50vw] md:w-[20vw] flex-none overflow-hidden relative group'>
-                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 z-10'>
-                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base'>Mei</h3>
-                                    <p className='uppercase text-white font-karla font-bold text-sm mt:2'>Summer</p>
+                                <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end items-center p-4 md:pb-10 z-10'>
+                                    <h3 className='uppercase text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>Mei</h3>
+                                    <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>Summer</p>
                                 </div>
                                 <img src='img-home-may.jpg' alt='img-home-jan.jpg' className='w-full h-full object-cover object-left group-hover:scale-110 transition duration-500' />
                             </div>
