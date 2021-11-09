@@ -1,6 +1,7 @@
 import { HomeAboutSection } from '../components/HomeComponent/HomeAboutSection'
 import { HomeAttractionSection } from '../components/HomeComponent/HomeAttractionSection'
 import { HomeDestinationSection } from '../components/HomeComponent/HomeDestinationSection'
+import { HomeGuideSection } from '../components/HomeComponent/HomeGuideSection'
 import { HomeHeroSection } from '../components/HomeComponent/HomeHeroSection'
 import { HomeInspirationSection } from '../components/HomeComponent/HomeInspirationSection'
 import { HomeMapSection } from '../components/HomeComponent/HomeMapSection'
@@ -20,6 +21,7 @@ export default function Home() {
       <HomeMustVisitSection />
       <HomeStorySection />
       <HomeInspirationSection />
+      <HomeGuideSection />
     </div>
   )
 }

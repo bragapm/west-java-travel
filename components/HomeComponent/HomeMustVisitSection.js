@@ -1,4 +1,5 @@
 import React from 'react'
+import MemoIcArrow from '../CustomIcons/IcArrow'
 
 export const HomeMustVisitSection = () => {
     return (
@@ -12,7 +13,7 @@ export const HomeMustVisitSection = () => {
                         <p className='font-karla text-neutral text-sm md:text-base'>Tempat untuk dikunjungi, jalan untuk dijelajahi, dan pengalaman khas.</p>
                         <a className='mt-8 py-4 px-6 rounded-full border border-bordercolor max-w-[127px] font-karla font-bold text-sm md:flex flex-row justify-between hidden'>
                             SEE ALL
-                            <img src='ic-arrow.svg' alt='ic-arrow' />
+                            <MemoIcArrow />
                         </a>
                     </div>
                     <div className='flex flex-col md:flex-row pt-8 md:pt-0 space-y-4 md:space-y-0 md:space-x-5'>
@@ -61,11 +62,11 @@ export const HomeMustVisitSection = () => {
                     <div className='flex flex-col md:w-4/12 md:pr-16'>
                         <h5 className='capitalize font-montserrat font-bold text-dark mb-2.5 md:text-xl'>Southern West Java</h5>
                         <p className='font-karla text-neutral text-sm md:text-base'>Tempat untuk dikunjungi, jalan untuk dijelajahi, dan pengalaman khas.</p>
-
                         <a className='mt-8 py-4 px-6 rounded-full border border-bordercolor max-w-[127px] font-karla font-bold text-sm md:flex flex-row justify-between hidden'>
                             SEE ALL
-                            <img src='ic-arrow.svg' alt='ic-arrow' />
-                        </a>                    </div>
+                            <MemoIcArrow />
+                        </a>
+                    </div>
                     <div className='flex flex-col md:flex-row pt-8 md:pt-0 space-y-4 md:space-y-0 md:space-x-5'>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
                             <div className='w-[80px] md:w-[284px] h-[70px] md:h-[177px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
@@ -115,7 +116,7 @@ export const HomeMustVisitSection = () => {
 
                         <a className='mt-8 py-4 px-6 rounded-full border border-bordercolor max-w-[127px] font-karla font-bold text-sm md:flex flex-row justify-between hidden'>
                             SEE ALL
-                            <img src='ic-arrow.svg' alt='ic-arrow' />
+                            <MemoIcArrow />
                         </a>                    </div>
                     <div className='flex flex-col md:flex-row pt-8 md:pt-0 space-y-4 md:space-y-0 md:space-x-5'>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
@@ -166,7 +167,7 @@ export const HomeMustVisitSection = () => {
 
                         <a className='mt-8 py-4 px-6 rounded-full border border-bordercolor max-w-[127px] font-karla font-bold text-sm md:flex flex-row justify-between hidden'>
                             SEE ALL
-                            <img src='ic-arrow.svg' alt='ic-arrow' />
+                            <MemoIcArrow />
                         </a>                    </div>
                     <div className='flex flex-col md:flex-row pt-8 md:pt-0 space-y-4 md:space-y-0 md:space-x-5'>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
@@ -217,7 +218,7 @@ export const HomeMustVisitSection = () => {
 
                         <a className='mt-8 py-4 px-6 rounded-full border border-bordercolor max-w-[127px] font-karla font-bold text-sm md:flex flex-row justify-between hidden'>
                             SEE ALL
-                            <img src='ic-arrow.svg' alt='ic-arrow' />
+                            <MemoIcArrow />
                         </a>                    </div>
                     <div className='flex flex-col md:flex-row pt-8 md:pt-0 space-y-4 md:space-y-0 md:space-x-5'>
                         <div className='flex flex-row md:flex-col md:max-w-[284px]'>
