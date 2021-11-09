@@ -1,3 +1,4 @@
+import { Footer } from '../components/Footer'
 import { HomeAboutSection } from '../components/HomeComponent/HomeAboutSection'
 import { HomeAttractionSection } from '../components/HomeComponent/HomeAttractionSection'
 import { HomeDestinationSection } from '../components/HomeComponent/HomeDestinationSection'
@@ -22,6 +23,7 @@ export default function Home() {
       <HomeStorySection />
       <HomeInspirationSection />
       <HomeGuideSection />
+      <Footer />
     </div>
   )
 }
