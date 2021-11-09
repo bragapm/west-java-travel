@@ -4,8 +4,8 @@ import MemoIcPlayButton from '../CustomIcons/IcPlayButton'
 export const HomeStorySection = () => {
     const [isPlaying, setisPlaying] = useState('');
     return (
-        <section className='py-10 relative'>
-            <div className='w-full h-[617px] md:h-[758px] rounded-t-[30px] md:rounded-t-[60px] bg-gradient-to-b from-[#E4ECF4] to-pink-[#E4ECF4] absolute top-[380px] md:top-[250px] left-0 z-0' />
+        <section className='py-10 md:py-20 relative'>
+            <div className='w-full h-[617px] md:h-[758px] rounded-t-[30px] md:rounded-t-[60px] bg-gradient-to-b from-[#E4ECF4] to-pink-[#E4ECF4] absolute top-[380px] md:top-[290px] left-0 z-0' />
             <div className='flex flex-col md:flex-row-reverse md:items-center px-5 md:px-36 z-20'>
                 <div className='flex flex-col z-20 md:pl-16'>
                     <h2 className='font-nothing-you-could-do text-blue text-3.5xl md:text-[2.5rem]'>Cerita Petualangan</h2>
@@ -29,14 +29,14 @@ export const HomeStorySection = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='absolute z-0 top-0 overflow-hidden rounded-2lg hidden opacity-0 group-hover:block group-hover:opacity-100 transition duration-500'>
+                    <div className='absolute w-full h-full z-0 top-0 overflow-hidden rounded-2lg hidden opacity-0 group-hover:block group-hover:opacity-100 transition duration-500'>
                         <iframe
                             src={`https://www.youtube.com/embed/6WbJYry2zg4${isPlaying}`}
                             frameBorder='0'
                             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                             allowFullScreen='1'
                             title='Embedded youtube'
-                            className='w-full md:w-[552px] h-[230px] md:h-[380px] z-0'
+                            className='w-full md:w-[552px] h-[230px] md:h-[380px] object-cover object-center z-0'
                         />
                     </div>
                 </div>
