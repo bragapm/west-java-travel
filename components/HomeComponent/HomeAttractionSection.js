@@ -12,31 +12,31 @@ export const HomeAttractionSection = () => {
             <div className='flex flex-col z-10'>
                 <div className='flex flex-row overflow-hidden mt-10 mb-5 md:mb-8'>
                     <div className='flex-none h-[214px] w-[142px] md:w-[298px] md:h-[450px] rounded-md md:rounded-2lg overflow-hidden relative group ml-5 md:ml-28'>
-                        <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 z-10 items-center'>
+                        <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 md:pb-10 z-10 items-center'>
                             <h4 className='uppercase text-yellow text-shadow text-xs md:text-1.5xl font-montserrat font-bold'>adventure</h4>
                         </div>
                         <img src='img-home-mountain.jpg' alt='img-mountain' className='w-full h-full object-cover object-right group-hover:scale-125 transition duration-500' />
                     </div>
                     <div className='flex-none h-[214px] w-[142px] md:w-[298px] md:h-[450px] rounded-md md:rounded-2lg overflow-hidden relative group ml-2 md:ml-4'>
-                        <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 z-10 items-center'>
+                        <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 md:pb-10 z-10 items-center'>
                             <h4 className='uppercase text-yellow text-shadow text-xs md:text-1.5xl font-montserrat font-bold'>Coast & Beach</h4>
                         </div>
                         <img src='img-home-beach.jpg' alt='img-beach' className='w-full h-full object-cover object-right group-hover:scale-125 transition duration-500' />
                     </div>
                     <div className='flex-none h-[214px] w-[142px] md:w-[298px] md:h-[450px] rounded-md md:rounded-2lg overflow-hidden relative group ml-2 md:ml-4'>
-                        <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 z-10 items-center'>
+                        <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 md:pb-10 z-10 items-center'>
                             <h4 className='uppercase text-yellow text-shadow text-xs md:text-1.5xl font-montserrat font-bold'>nature</h4>
                         </div>
                         <img src='img-home-eastern.jpg' alt='img-nature' className='w-full h-full object-cover group-hover:scale-125 transition duration-500' />
                     </div>
                     <div className='flex-none h-[214px] w-[142px] md:w-[298px] md:h-[450px] rounded-md md:rounded-2lg overflow-hidden relative group ml-2 md:ml-4'>
-                        <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 z-10 items-center'>
+                        <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 md:pb-10 z-10 items-center'>
                             <h4 className='uppercase text-yellow text-shadow text-xs md:text-1.5xl font-montserrat font-bold'>Urban Life</h4>
                         </div>
                         <img src='img-home-urban.jpg' alt='img-urban' className='w-full h-full object-cover object-right group-hover:scale-125 transition duration-500' />
                     </div>
                     <div className='flex-none h-[214px] w-[142px] md:w-[298px] md:h-[450px] rounded-md md:rounded-2lg overflow-hidden relative group ml-2 md:ml-4'>
-                        <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 z-10 items-center'>
+                        <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 md:pb-10 z-10 items-center'>
                             <h4 className='uppercase text-yellow text-shadow text-xs md:text-1.5xl font-montserrat font-bold'>Shopping</h4>
                         </div>
                         <img src='img-home-mountain.jpg' alt='img-mountain' className='w-full h-full object-cover object-right group-hover:scale-125 transition duration-500' />
