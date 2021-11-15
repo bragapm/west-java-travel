@@ -7,7 +7,7 @@ export const HomeInspirationSection = () => {
             <h4 className='capitalize font-montserrat font-bold text-dark text-lg md:text-2.5xl z-10'>Inspirasi Perjalanan</h4>
             <div className='w-full h-px bg-bordercolor my-6 md:my-7' />
             <div className='flex flex-col md:flex-col-reverse items-center md:items-end md:-translate-y-28'>
-                <div className='grid grid-cols-6 z-10 gap-2.5 w-full'>
+                <div className='grid grid-cols-6 z-10 gap-2.5 md:gap-3.5 w-full'>
                     <div className='rounded-md overflow-hidden relative col-span-2 md:col-span-1 md:row-span-1'>
                         <img src='img-home-may.jpg' className='w-full h-full object-cover' />
                         <MemoIcInstagram className='text-white absolute top-3 right-3 md:top-4 md:right-4 z-20 md:scale-125' />

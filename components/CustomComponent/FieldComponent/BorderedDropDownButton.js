@@ -10,7 +10,7 @@ export const BorderedDropDownButton = ({ options }) => {
                 <Listbox.Button className="relative w-full py-[1.125rem] pl-6 text-left bg-white rounded-full border border-bordercolor focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 focus-visible:border-indigo-500 text-sm md:text-base font-karla font-bold text-neutral">
                     <span className="block truncate">{selected.label}</span>
                     <span className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
-                        <img src='ic-dropdown-arrow.svg' alt='ic-arrow' />
+                        <img src='/ic-dropdown-arrow.svg' alt='ic-arrow' />
                     </span>
                 </Listbox.Button>
                 <Transition

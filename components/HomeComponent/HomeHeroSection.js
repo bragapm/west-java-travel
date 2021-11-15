@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { animate, stagger } from 'motion';
+import MemoIcCirlceArrow from '../CustomIcons/IcCirlceArrow';
 
 export const HomeHeroSection = () => {
     const heroTitle = useRef();
@@ -220,12 +221,12 @@ export const HomeHeroSection = () => {
                     </div>
                 </div>
                 <div className='flex flex-col-reverse md:px-0 px-5 md:flex-row md:-translate-y-28 pr-5 md:pr-0 space-y-3 space-x-0 md:space-y-0 md:space-x-3'>
-                    <button className='text-karla bg-white px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-dark mt-3 md:mt-0'>
+                    <button className='text-karla bg-white mb-4 md:mb-0 px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-dark mt-3 md:mt-0'>
                         DISCOVER MORE
                         </button>
                     <button className='text-karla bg-glassmorphic px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-white flex flex-row items-center justify-center'>
                         EXPLORE NOW
-                            <img src='ic-cirlce-arrow.svg' className='ml-4' />
+                        <MemoIcCirlceArrow className='text-white ml-4'/>
                     </button>
                 </div>
             </div>

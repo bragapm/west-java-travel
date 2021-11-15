@@ -111,6 +111,20 @@ module.exports = {
           'line-clamp': '2',
           '-webkit-box-orient': 'vertical'
         },
+        '.threeline-text': {
+          'overflow': 'hidden',
+          'text-overflow': 'ellipsis',
+          'display': '-webkit-box',
+          '-webkit-line-clamp': '3',
+          'line-clamp': '3',
+          '-webkit-box-orient': 'vertical'
+        },
+        '.smooth-scroll': {
+          'overflow-y': 'scroll',
+          'scroll-behavior': 'smooth',
+          'display': 'block',
+          'height': '100vh',
+        },
       }
 
       addUtilities(newUtilities)
