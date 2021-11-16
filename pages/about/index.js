@@ -77,9 +77,9 @@ export default function About() {
                     <NavigationDropDownButton
                         className='md:hidden'
                         options={[
-                            { label: 'History' },
-                            { label: 'Megazine' },
-                            { label: 'Brochure' },
+                            { label: 'History', href: '#history-section' },
+                            { label: 'Megazine', href: '#megazine-section' },
+                            { label: 'Brochure', href: '#brochure-section' },
                         ]}
                     />
                     <AboutHistorySection historySectionRef={historySectionRef} />

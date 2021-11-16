@@ -14,7 +14,7 @@ import { Navbar } from '../components/Navbar'
 export default function Home() {
   return (
     <div className='overflow-hidden'>
-      <Navbar />
+      <Navbar activePage='home'/>
       <HomeHeroSection />
       <HomeAboutSection />
       <HomeMapSection />

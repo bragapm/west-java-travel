@@ -39,7 +39,7 @@ export const NavigationDropDownButton = ({ options, className }) => {
                                     value={option}
                                 >
                                     {({ selected, active }) => (
-                                        <>
+                                        <a href={option.href} className='flex flex-row'>
                                             <span className='font-montserrat text-[#000E22] text-opacity-50 text-sm font-bold pr-2.5'>0{idx + 1}</span>
                                             <span
                                                 className={`${selected ? 'font-bold' : 'font-normal'
@@ -47,7 +47,7 @@ export const NavigationDropDownButton = ({ options, className }) => {
                                             >
                                                 {option.label}
                                             </span>
-                                        </>
+                                        </a>
                                     )}
                                 </Listbox.Option>
                             ))}

@@ -6,6 +6,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      transitionProperty: {
+        'clip-path': 'clip-path',
+      },
       spacing: {
         '22': '5.6rem',
       },
@@ -124,6 +127,12 @@ module.exports = {
           'scroll-behavior': 'smooth',
           'display': 'block',
           'height': '100vh',
+        },
+        '.circle-clip': {
+          'clip-path': 'circle(0% at 94% 6%)',
+        },
+        '.full-clip': {
+          'clip-path': 'circle(75%)',
         },
       }
 

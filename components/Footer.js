@@ -36,14 +36,9 @@ export const Footer = () => {
                         className='bg-white bg-opacity-10 text-white rounded-lg'
                         options={[
                             { label: '🇮🇩 Indonesia' },
-                            { label: 'Bandung' },
-                            { label: 'Sukabumi' },
-                            { label: 'Bogor' },
-                            { label: 'Bogor' },
-                            { label: 'Bogor' },
-                            { label: 'Bogor' },
-                            { label: 'Bogor' },
-                            { label: 'Bogor' },
+                            { label: '🇬🇧 English' },
+                            { label: '🇳🇱 Dutch' },
+                            { label: '🇸🇦 Arabic' },
                         ]} />
                 </div>
             </div>

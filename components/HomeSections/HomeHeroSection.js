@@ -130,6 +130,38 @@ export const HomeHeroSection = () => {
             );
         }
 
+        const imgHeroTitleRef1 = document.getElementsByClassName('hero-title-1');
+        const imgHeroTitleRef2 = document.getElementsByClassName('hero-title-2');
+        const imgHeroTitleRef3 = document.getElementsByClassName('hero-title-3');
+
+        if (imgHeroTitleRef1) {
+            animate(
+                imgHeroTitleRef1,
+                {
+                    opacity: [1, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+                },
+                animationProperies
+            );
+        }
+        if (imgHeroTitleRef2) {
+            animate(
+                imgHeroTitleRef2,
+                {
+                    opacity: [1, 1, 1, 1, 0, 0, 0, 0, 1, 1],
+                },
+                animationProperies
+            );
+        }
+        if (imgHeroTitleRef3) {
+            animate(
+                imgHeroTitleRef3,
+                {
+                    opacity: [1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+                },
+                animationProperies
+            );
+        }
+
         return;
     }, []);
 
