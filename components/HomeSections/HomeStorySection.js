@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import MemoIcPlayButton from '../CustomIcons/IcPlayButton'
+import MemoIcPlayButton from '../custom-icons/IcPlayButton'
 
 export const HomeStorySection = () => {
     const [isPlaying, setisPlaying] = useState('');

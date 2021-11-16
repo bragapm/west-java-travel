@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { animate, stagger } from 'motion';
-import MemoIcCirlceArrow from '../CustomIcons/IcCirlceArrow';
+import MemoIcCirlceArrow from '../custom-icons/IcCirlceArrow';
 
 export const HomeHeroSection = () => {
     const heroTitle = useRef();
@@ -32,6 +32,16 @@ export const HomeHeroSection = () => {
             animate(
                 heroDesc.current,
                 { y: [0, -itemHeight, null, null, -(itemHeight * 2), null, null, -(itemHeight * 3), null, null] },
+                animationProperies
+            );
+        }
+
+        if (heroCarousel.current) {
+            const itemWidth = heroImgCarousel.current.clientWidth;
+
+            animate(
+                heroCarousel.current,
+                { x: [0, -itemWidth, null, null, -(itemWidth * 2), null, null, -(itemWidth * 3), null, null] },
                 animationProperies
             );
         }
@@ -120,18 +130,8 @@ export const HomeHeroSection = () => {
             );
         }
 
-        if (heroCarousel.current) {
-            const itemWidth = heroImgCarousel.current.clientWidth;
-
-            animate(
-                heroCarousel.current,
-                { x: [0, -itemWidth, null, null, -(itemWidth * 2), null, null, -(itemWidth * 3), null, null] },
-                animationProperies
-            );
-        }
-
         return;
-    }, [heroTitle.current, heroDesc.current, heroCarousel.current]);
+    }, []);
 
 
     return (
@@ -182,10 +182,10 @@ export const HomeHeroSection = () => {
                     <div className='flex flex-col md:pb-24 md:pr-0 pr-10 px-5 md:px-0'>
                         <div className='md:max-h-[12rem] max-h-[6rem] overflow-hidden'>
                             <div ref={heroTitle} className='flex flex-col'>
-                                <h1 className='md:text-7.7xl text-4.5xl font-bold font-montserrat text-gradient pt-1'>PANTAI 1<br />MADASARI</h1>
-                                <h1 className='md:text-7.7xl text-4.5xl font-bold font-montserrat text-gradient pt-1'>PANTAI 2<br />MADASARI</h1>
-                                <h1 className='md:text-7.7xl text-4.5xl font-bold font-montserrat text-gradient pt-1'>PANTAI 3<br />MADASARI</h1>
-                                <h1 className='md:text-7.7xl text-4.5xl font-bold font-montserrat text-gradient pt-1'>PANTAI 1<br />MADASARI</h1>
+                                <h1 className='hero-title-1 md:text-7.7xl text-4.5xl font-bold font-montserrat text-gradient pt-1'>PANTAI 1<br />MADASARI</h1>
+                                <h1 className='hero-title-2 md:text-7.7xl text-4.5xl font-bold font-montserrat text-gradient pt-1'>PANTAI 2<br />MADASARI</h1>
+                                <h1 className='hero-title-3 md:text-7.7xl text-4.5xl font-bold font-montserrat text-gradient pt-1'>PANTAI 3<br />MADASARI</h1>
+                                <h1 className='hero-title-4 md:text-7.7xl text-4.5xl font-bold font-montserrat text-gradient pt-1'>PANTAI 1<br />MADASARI</h1>
                             </div>
                         </div>
                         <div className='md:max-h-14 max-h-[4.5rem] overflow-hidden mt-3 md:mt-6'>
@@ -217,16 +217,19 @@ export const HomeHeroSection = () => {
                             <div className='min-w-[8rem] md:min-w-[16.875rem] pr-2 md:pr-0'>
                                 <img src='img-hero-carousel-3.png' alt='img-carousel' className='rounded-2lg' />
                             </div>
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-1 pr-2 md:pr-0'>
+                                <img src='img-hero-carousel-1.png' alt='img-carousel' className='rounded-2lg' />
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className='flex flex-col-reverse md:px-0 px-5 md:flex-row md:-translate-y-28 pr-5 md:pr-0 space-y-3 space-x-0 md:space-y-0 md:space-x-3'>
                     <button className='text-karla bg-white mb-4 md:mb-0 px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-dark mt-3 md:mt-0'>
                         DISCOVER MORE
-                        </button>
+                    </button>
                     <button className='text-karla bg-glassmorphic px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-white flex flex-row items-center justify-center'>
                         EXPLORE NOW
-                        <MemoIcCirlceArrow className='text-white ml-4'/>
+                        <MemoIcCirlceArrow className='text-white ml-4' />
                     </button>
                 </div>
             </div>

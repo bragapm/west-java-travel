@@ -1,9 +1,9 @@
 import React from 'react'
-import { TabComponent } from '../CustomComponent/TabComponent'
-import { HomeSectionTitle } from '../CustomComponent/TextComponent/HomeSectionTitle'
-import MemoIcLeaf from '../CustomIcons/IcLeaf'
-import MemoIcRainy from '../CustomIcons/IcRainy'
-import MemoIcSun from '../CustomIcons/IcSun'
+import { TabComponent } from '../custom-component/TabComponent'
+import { HomeSectionTitle } from '../custom-component/TextComponent/HomeSectionTitle'
+import MemoIcLeaf from '../custom-icons/IcLeaf'
+import MemoIcRainy from '../custom-icons/IcRainy'
+import MemoIcSun from '../custom-icons/IcSun'
 
 export const HomeSeasonSection = () => {
     return (

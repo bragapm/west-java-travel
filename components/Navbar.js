@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import MemoIcArrowIos from './CustomIcons/IcArrowIos';
-import MemoIcMenu from './CustomIcons/IcMenu';
+import MemoIcArrowIos from './custom-icons/IcArrowIos';
+import MemoIcMenu from './custom-icons/IcMenu';
 import Link from 'next/link';
 
 

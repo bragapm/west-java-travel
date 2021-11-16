@@ -1,10 +1,10 @@
-import { AboutHistorySection } from "../../components/AboutComponent/AboutHistorySection";
-import { AboutMegazineSection } from "../../components/AboutComponent/AboutMegazineSection";
-import { NavigationDropDownButton } from "../../components/CustomComponent/FieldComponent/NavigationDropDownButton";
-import { HomeSectionTitle } from "../../components/CustomComponent/TextComponent/HomeSectionTitle";
+import { AboutHistorySection } from "../../components/about-sections/AboutHistorySection";
+import { AboutMegazineSection } from "../../components/about-sections/AboutMegazineSection";
+import { NavigationDropDownButton } from "../../components/custom-component/FieldComponent/NavigationDropDownButton";
+import { HomeSectionTitle } from "../../components/custom-component/TextComponent/HomeSectionTitle";
 import { Navbar } from "../../components/Navbar";
 import { Footer } from '../../components/Footer'
-import { AboutBrochureSection } from "../../components/AboutComponent/AboutBrochureSection";
+import { AboutBrochureSection } from "../../components/about-sections/AboutBrochureSection";
 import { useEffect, useRef, useState } from "react";
 
 
@@ -44,12 +44,12 @@ export default function About() {
         }
 
         return () => observer.disconnect();
-    }, [megazineSectionRef, historySectionRef, brochureSectionRef, megazineTopSectionRef])
+    }, [])
 
     return (
         <div className='smooth-scroll'>
             <Navbar activePage='about' />
-            <div className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-40 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${activeSection != 'history-section' ? 'md:flex opacity-100' : 'hidden opacity-0'} transition-all duration-300`}>
+            <div className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-40 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${activeSection != 'history-section' ? 'md:flex hidden md:opacity-100 opacity-0' : 'hidden opacity-0'} transition-all duration-300`}>
                 <a href='#history-section'  className='font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
                     01
                                 <span className='font-karla text-neutral font-normal ml-5'>History</span>

@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
-import MemoIcCirlceArrow from '../../CustomIcons/IcCirlceArrow'
+import MemoIcCirlceArrow from '../../custom-icons/IcCirlceArrow'
 
 export const NavigationDropDownButton = ({ options, className }) => {
     const [selected, setSelected] = useState(options[0])

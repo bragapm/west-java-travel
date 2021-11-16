@@ -1,10 +1,10 @@
 import React from 'react'
-import { FillDropDownButton } from './CustomComponent/FieldComponent/FillDropDownButton'
-import MemoIcArrowIos from './CustomIcons/IcArrowIos'
-import MemoIcFacebook from './CustomIcons/IcFacebook'
-import MemoIcInstagram from './CustomIcons/IcInstagram'
-import MemoIcTwitter from './CustomIcons/IcTwitter'
-import MemoIcYoutube from './CustomIcons/IcYoutube'
+import { FillDropDownButton } from './custom-component/FieldComponent/FillDropDownButton'
+import MemoIcArrowIos from './custom-icons/IcArrowIos'
+import MemoIcFacebook from './custom-icons/IcFacebook'
+import MemoIcInstagram from './custom-icons/IcInstagram'
+import MemoIcTwitter from './custom-icons/IcTwitter'
+import MemoIcYoutube from './custom-icons/IcYoutube'
 
 export const Footer = () => {
     return (

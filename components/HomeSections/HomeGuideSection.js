@@ -1,6 +1,6 @@
 import React from 'react'
-import { HomeSectionTitle } from '../CustomComponent/TextComponent/HomeSectionTitle'
-import MemoIcArrow from '../CustomIcons/IcArrow'
+import { HomeSectionTitle } from '../custom-component/TextComponent/HomeSectionTitle'
+import MemoIcArrow from '../custom-icons/IcArrow'
 
 export const HomeGuideSection = () => {
     return (

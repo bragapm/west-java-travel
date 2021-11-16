@@ -1,6 +1,6 @@
 import React from 'react';
 import { HomeGallerySection } from './HomeGallerySection';
-import { HomeSectionTitle } from '../CustomComponent/TextComponent/HomeSectionTitle';
+import { HomeSectionTitle } from '../custom-component/TextComponent/HomeSectionTitle';
 
 
 export const HomeAboutSection = () => {

@@ -1,8 +1,8 @@
 import { fromJSON } from 'postcss'
 import React from 'react'
-import { BorderedDropDownButton } from '../CustomComponent/FieldComponent/BorderedDropDownButton';
-import { TabComponent } from '../CustomComponent/TabComponent';
-import { HomeSectionTitle } from '../CustomComponent/TextComponent/HomeSectionTitle'
+import { BorderedDropDownButton } from '../custom-component/FieldComponent/BorderedDropDownButton';
+import { TabComponent } from '../custom-component/TabComponent';
+import { HomeSectionTitle } from '../custom-component/TextComponent/HomeSectionTitle'
 import MemoHomeMap from './HomeMap';
 
 const destination = [

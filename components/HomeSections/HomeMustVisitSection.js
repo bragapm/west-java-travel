@@ -1,5 +1,5 @@
 import React from 'react'
-import MemoIcArrow from '../CustomIcons/IcArrow'
+import MemoIcArrow from '../custom-icons/IcArrow'
 
 export const HomeMustVisitSection = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import MemoIcInstagram from '../CustomIcons/IcInstagram'
+import MemoIcInstagram from '../custom-icons/IcInstagram'
 
 export const HomeInspirationSection = () => {
     return (

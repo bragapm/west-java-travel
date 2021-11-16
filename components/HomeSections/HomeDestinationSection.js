@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomeSectionTitle } from '../CustomComponent/TextComponent/HomeSectionTitle'
+import { HomeSectionTitle } from '../custom-component/TextComponent/HomeSectionTitle'
 
 export const HomeDestinationSection = () => {
     return (
