@@ -2,7 +2,7 @@ import React from 'react'
 
 export const AboutHistorySection = ({ historySectionRef }) => {
     return (
-        <section className='md:pt-16 pt-8 md:ml-9' ref={historySectionRef} id='history-section'>
+        <section className='md:pt-16 pt-8 md:ml-9 max-h-72 md:max-h-full overflow-hidden' ref={historySectionRef} id='history-section'>
                     <h4 className='font-montserrat font-bold text-dark text-xl md:text-2xl'>History</h4>
                     <p className='pt-5 text-neutral font-karla text-sm md:text-lg'>Bandung memiliki sejuta pesona yang selalu membuat wisatawan terpana. Bagaimana tidak? Mulai dari tempat wisata berbasis alam, destinasi rekreasi kekinian, hingga kuliner dan tren fesyen bisa Sobat Pesona temui semua di Ibu Kota Jawa Barat ini. Saking idealnya, Bandung seringkali menjadi destinasi tujuan rekreasi singkat di hari libur maupun akhir pekan. Baik bersama teman, keluarga, atau sendirian, selalu ada tempat seru dan menyenangkan yang bisa ditelusuri di Kota Bandung.</p>
                     <img src='/img-about-history.png' className='pt-5 w-full rounded-2lg' />

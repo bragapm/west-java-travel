@@ -13,7 +13,8 @@ export default function About() {
     const megazineTopSectionRef = useRef();
     const historySectionRef = useRef();
     const brochureSectionRef = useRef();
-    const [activeSection, setactiveSection] = useState('history-section')
+    const thumbnailRef = useRef();
+    const [activeSection, setactiveSection] = useState('thumbnail')
 
     useEffect(() => {
         const options = {
@@ -42,6 +43,9 @@ export default function About() {
         if (brochureSectionRef && brochureSectionRef.current) {
             observer.observe(brochureSectionRef.current);
         }
+        if (thumbnailRef && thumbnailRef.current) {
+            observer.observe(thumbnailRef.current);
+        }
 
         return () => observer.disconnect();
     }, [])
@@ -49,21 +53,21 @@ export default function About() {
     return (
         <div className='smooth-scroll'>
             <Navbar activePage='about' />
-            <div className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-40 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${activeSection != 'history-section' ? 'md:flex hidden md:opacity-100 opacity-0' : 'hidden opacity-0'} transition-all duration-300`}>
-                <a href='#history-section'  className='font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
+            <div className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-40 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${activeSection == 'magazine-section' || activeSection == 'megazine-section' || activeSection == 'brochure-section' ? 'md:flex hidden md:opacity-100 opacity-0' : 'hidden opacity-0'} transition-all duration-300`}>
+                <a href='#history-section' className='font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
                     01
-                                <span className='font-karla text-neutral font-normal ml-5'>History</span>
+                    <span className='font-karla text-neutral font-normal ml-5'>History</span>
                 </a>
                 <a href='#megazine-section' className={`font-montserrat ${activeSection == 'megazine-section' || activeSection == 'magazine-section' ? 'text-dark text-opacity-50' : 'text-neutral text-opacity-40'} transition-all font-bold text-xl flex flex-row items-center`}>
                     02
-                                <span className={`font-karla text-neutral ${activeSection == 'megazine-section' || activeSection == 'magazine-section' ? 'font-bold' : 'font-normal'} transition-all ml-5`}>Megazine</span>
+                    <span className={`font-karla text-neutral ${activeSection == 'megazine-section' || activeSection == 'magazine-section' ? 'font-bold' : 'font-normal'} transition-all ml-5`}>Megazine</span>
                 </a>
                 <a href='#brochure-section' className={`font-montserrat ${activeSection == 'brochure-section' ? 'text-dark text-opacity-50' : 'text-neutral text-opacity-40'} transition-all font-bold text-xl flex flex-row items-center`}>
                     03
-                                <span className={`font-karla text-neutral ${activeSection == 'brochure-section' ? 'font-bold' : 'font-normal'} transition-all ml-5`}>Brochure</span>
+                    <span className={`font-karla text-neutral ${activeSection == 'brochure-section' ? 'font-bold' : 'font-normal'} transition-all ml-5`}>Brochure</span>
                 </a>
             </div>
-            <div className='pt-20 md:pt-36'>
+            <div className='pt-20 md:pt-36' ref={thumbnailRef} id='thumbnail'>
                 <div className='w-full overflow-hidden md:px-[7.5rem]'>
                     <img src='/img-about-thumbnail.jpg' className='w-full h-full object-cover md:rounded-3xl' />
                 </div>
@@ -92,21 +96,21 @@ export default function About() {
                         <h4 className='capitalize font-montserrat font-bold text-dark text-xl pb-5'>Lompat ke menu</h4>
                         <a href='#history-section' className='pb-5 font-montserrat text-dark text-opacity-50 font-bold text-xl flex flex-row items-center'>
                             01
-                                <span className='font-karla text-neutral ml-5'>History</span>
+                            <span className='font-karla text-neutral ml-5'>History</span>
                         </a>
                         <a href='#megazine-section' className='pb-5 font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
                             02
-                                <span className='font-karla text-neutral font-normal ml-5'>Megazine</span>
+                            <span className='font-karla text-neutral font-normal ml-5'>Megazine</span>
                         </a>
                         <a href='#brochure-section' className='font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
                             03
-                                <span className='font-karla text-neutral font-normal ml-5'>Brochure</span>
+                            <span className='font-karla text-neutral font-normal ml-5'>Brochure</span>
                         </a>
                     </div>
                 </div>
             </div>
             <AboutMegazineSection megazineSectionRef={megazineSectionRef} megazineTopSectionRef={megazineTopSectionRef} />
-            <AboutBrochureSection brochureSectionRef={brochureSectionRef}/>
+            <AboutBrochureSection brochureSectionRef={brochureSectionRef} />
             <Footer />
         </div>
     )

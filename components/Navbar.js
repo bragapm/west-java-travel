@@ -49,7 +49,9 @@ export const Navbar = ({ activePage }) => {
                     <Link href='/'>
                         <a className={`uppercase font-karla hover:opacity-70 ${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}>home</a>
                     </Link>
-                    <a className={`uppercase font-karla hover:opacity-70 ${activePage == 'where-to-go' ? 'text-primary font-bold' : `${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}`}>Where To Go</a>
+                    <Link href='/where-to-go/central west java'>
+                        <a className={`uppercase font-karla hover:opacity-70 ${activePage == 'where-to-go' ? 'text-primary font-bold' : `${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}`}>Where To Go</a>
+                    </Link>
                     <a className={`uppercase font-karla hover:opacity-70 ${activePage == 'plan-your-trip' ? 'text-primary font-bold' : `${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}`}>Plan Your Trip</a>
                     <a className={`uppercase font-karla hover:opacity-70 ${activePage == 'travel-tips' ? 'text-primary font-bold' : `${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}`}>Travel Tips</a>
                     <Link href='/about'>
@@ -77,7 +79,9 @@ export const Navbar = ({ activePage }) => {
                     <Link href='/'>
                         <a className={`uppercase font-karla text-lg hover:opacity-70 ${activePage == 'home' ? 'text-primary font-bold' : 'text-neutral font-normal'}`}>home</a>
                     </Link>
-                    <a className={`uppercase font-karla text-lg hover:opacity-70 ${activePage == 'where-to-go' ? 'text-primary font-bold' : 'text-neutral font-normal'}`}>Where To Go</a>
+                    <Link href='/where-to-go/central west java'>
+                        <a className={`uppercase font-karla text-lg hover:opacity-70 ${activePage == 'where-to-go' ? 'text-primary font-bold' : 'text-neutral font-normal'}`}>Where To Go</a>
+                    </Link>
                     <a className={`uppercase font-karla text-lg hover:opacity-70 ${activePage == 'plan-your-trip' ? 'text-primary font-bold' : 'text-neutral font-normal'}`}>Plan Your Trip</a>
                     <a className={`uppercase font-karla text-lg hover:opacity-70 ${activePage == 'travel-tips' ? 'text-primary font-bold' : 'text-neutral font-normal'}`}>Travel Tips</a>
                     <Link href='/about'>

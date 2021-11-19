@@ -57,11 +57,11 @@ module.exports = {
       colors: {
         'primary': '#086CB4',
         'secondary': '#011F56',
-        'yellow': '#FDD24A',
+        'yellow': '#FFB703',
         'orange': '#FB8500',
-        'blue': '#63BFE8',
-        'green': '#3BC56D',
-        'red': '#E74D4C',
+        'blue': '#219EBC',
+        'green': '#8ECAE6',
+        'red': '#023047',
         'bordercolor': '#CBD9EA',
         'neutral': '#3C4B62',
       },
@@ -137,6 +137,7 @@ module.exports = {
       }
 
       addUtilities(newUtilities)
-    })
+    }),
+    require('@tailwindcss/forms'),
   ],
 }

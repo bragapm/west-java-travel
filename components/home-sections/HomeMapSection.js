@@ -81,7 +81,6 @@ export const HomeMapSection = () => {
                             </div>
                             <div className='w-full h-32 bg-gradient-to-t from-white to-transparent absolute -bottom-4' />
                         </div>,
-                        
                     ]}
                 />
             </div>
