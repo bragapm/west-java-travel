@@ -5,12 +5,23 @@ import { WhereToGoDemografiSection } from "../../components/where-to-go-section/
 import { HomeSectionTitle } from "../../components/custom-component/TextComponent/HomeSectionTitle";
 import { useEffect, useRef, useState } from "react";
 import { WhereToGoDestinantionSection } from "../../components/where-to-go-section/WhereToGoDestinantionSection";
+import { WhereToGoInFrameSection } from "../../components/where-to-go-section/WhereToGoInFrameSection";
+import { WhereToGoIdeasSection } from "../../components/where-to-go-section/WhereToGoIdeasSection";
+import { useRouter } from "next/dist/client/router";
 
 
 export default function WhereToGo() {
+    const router = useRouter();
+
     const thumbnailRef = useRef();
     const demografiSectionRef = useRef();
+    const destinationSectionRef = useRef();
+    const inFrameSectionRef = useRef();
+    const tripIdeasSectionRef = useRef();
     const [activeSection, setactiveSection] = useState('thumbnail');
+
+    console.log()
+
 
     useEffect(() => {
         const options = {
@@ -30,13 +41,43 @@ export default function WhereToGo() {
         if (thumbnailRef && thumbnailRef.current) {
             observer.observe(thumbnailRef.current);
         }
+        if (demografiSectionRef && demografiSectionRef.current) {
+            observer.observe(demografiSectionRef.current);
+        }
+        if (destinationSectionRef && destinationSectionRef.current) {
+            observer.observe(destinationSectionRef.current);
+        }
+        if (inFrameSectionRef && inFrameSectionRef.current) {
+            observer.observe(inFrameSectionRef.current);
+        }
+        if (tripIdeasSectionRef && tripIdeasSectionRef.current) {
+            observer.observe(tripIdeasSectionRef.current);
+        }
 
         return () => observer.disconnect();
     }, [])
 
     return (
         <div className='smooth-scroll'>
-            <Navbar activePage='where-to-go' />
+            <Navbar activePage={router.query.westJavaRegion} />
+            <div className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-40 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${activeSection == 'destination-section' || activeSection == 'in-frame-section' || activeSection == 'trip-ideas-section' ? 'md:flex hidden md:opacity-100 opacity-0' : 'hidden opacity-0'} transition-all duration-300`}>
+                <a href='#demografi-section' className='font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
+                    01
+                    <span className='font-karla text-neutral font-normal ml-5'>Demografi</span>
+                </a>
+                <a href='#destination-section' className={`font-montserrat ${activeSection == 'destination-section' ? 'text-dark text-opacity-50' : 'text-neutral text-opacity-40'} transition-all font-bold text-xl flex flex-row items-center`}>
+                    02
+                    <span className={`font-karla text-neutral ${activeSection == 'destination-section' ? 'font-bold' : 'font-normal'} transition-all ml-5`}>Destinasi & Atraksi</span>
+                </a>
+                <a href='#in-frame-section' className={`font-montserrat ${activeSection == 'in-frame-section' ? 'text-dark text-opacity-50' : 'text-neutral text-opacity-40'} transition-all font-bold text-xl flex flex-row items-center`}>
+                    03
+                    <span className={`font-karla text-neutral ${activeSection == 'in-frame-section' ? 'font-bold' : 'font-normal'} transition-all ml-5`}>Southern West Java In Frame</span>
+                </a>
+                <a href='#trip-ideas-section' className={`font-montserrat ${activeSection == 'trip-ideas-section' ? 'text-dark text-opacity-50' : 'text-neutral text-opacity-40'} transition-all font-bold text-xl flex flex-row items-center`}>
+                    04
+                    <span className={`font-karla text-neutral ${activeSection == 'trip-ideas-section' ? 'font-bold' : 'font-normal'} transition-all ml-5`}>Trip Ideas</span>
+                </a>
+            </div>
             <div className='pt-20 md:pt-36' id='thumbnail'>
                 <div className='w-full overflow-hidden md:px-[7.5rem]'>
                     <img src='/img-about-thumbnail.jpg' className='w-full h-full object-cover md:rounded-3xl' />
@@ -74,9 +115,10 @@ export default function WhereToGo() {
                     <NavigationDropDownButton
                         className='md:hidden'
                         options={[
-                            { label: 'History', href: '#history-section' },
-                            { label: 'Megazine', href: '#megazine-section' },
-                            { label: 'Brochure', href: '#brochure-section' },
+                            { label: 'Demografi', href: '#demografi-section' },
+                            { label: 'Destinasi & Atraksi', href: '#destination-section' },
+                            { label: 'Southern West Java In Frame', href: '#in-frame-section' },
+                            { label: 'Trip Ideas', href: '#trip-ideas-section' },
                         ]}
                     />
                     <WhereToGoDemografiSection demografiSectionRef={demografiSectionRef} />
@@ -87,26 +129,28 @@ export default function WhereToGo() {
                     </div>
                     <div className='flex flex-col'>
                         <h4 className='capitalize font-montserrat font-bold text-dark text-xl pb-5'>Lompat ke menu</h4>
-                        <a href='#history-section' className='pb-5 font-montserrat text-dark text-opacity-50 font-bold text-xl flex flex-row items-center'>
+                        <a href='#demografi-section' className='pb-5 font-montserrat text-dark text-opacity-50 font-bold text-xl flex flex-row items-center'>
                             01
                             <span className='font-karla text-neutral ml-5'>Demografi</span>
                         </a>
-                        <a href='#megazine-section' className='pb-5 font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
+                        <a href='#destination-section' className='pb-5 font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
                             02
                             <span className='font-karla text-neutral font-normal ml-5'>Destinasi & Atraksi</span>
                         </a>
-                        <a href='#brochure-section' className='pb-5 font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
+                        <a href='#in-frame-section' className='pb-5 font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
                             03
                             <span className='font-karla text-neutral font-normal ml-5'>Southern West Java In Frame</span>
                         </a>
-                        <a href='#brochure-section' className='font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
+                        <a href='#trip-ideas-section' className='font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
                             04
                             <span className='font-karla text-neutral font-normal ml-5'>Trip Ideas</span>
                         </a>
                     </div>
                 </div>
             </div>
-            <WhereToGoDestinantionSection />
+            <WhereToGoDestinantionSection destinationSectionRef={destinationSectionRef} />
+            <WhereToGoInFrameSection inFrameSectionRef={inFrameSectionRef} />
+            <WhereToGoIdeasSection tripIdeasSectionRef={tripIdeasSectionRef} />
             <Footer />
         </div>
     )

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import MemoIcArrowIos from './custom-icons/IcArrowIos';
 import MemoIcMenu from './custom-icons/IcMenu';
 import Link from 'next/link';
+import { NavBarDropDownButton } from './custom-component/FieldComponent/NavBarDropDownButton';
 
 
 export const Navbar = ({ activePage }) => {
@@ -45,13 +46,24 @@ export const Navbar = ({ activePage }) => {
                 >
                     <MemoIcMenu className={`${activePage != 'home' ? 'text-primary' : `${isTipTop ? 'text-white' : 'text-primary'}`} transition-all duration-300 md:hidden`} />
                 </button>
-                <div className='md:flex flex-row space-x-[3.125rem] hidden'>
+                <div className='md:flex flex-row space-x-[3.125rem] hidden items-center'>
                     <Link href='/'>
                         <a className={`uppercase font-karla hover:opacity-70 ${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}>home</a>
                     </Link>
-                    <Link href='/where-to-go/central west java'>
-                        <a className={`uppercase font-karla hover:opacity-70 ${activePage == 'where-to-go' ? 'text-primary font-bold' : `${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}`}>Where To Go</a>
-                    </Link>
+                    <NavBarDropDownButton
+                        className={`uppercase font-karla hover:opacity-70 ${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}
+                        arrowClassName={`${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-primary'}`}`}
+                        title='Where To Go'
+                        activePage={activePage}
+                        setisShowMobileNavOptions={setisShowMobileNavOptions}
+                        options={[
+                            { label: 'northern west java', href: '/where-to-go/northern west java' },
+                            { label: 'southern west java', href: '/where-to-go/southern west java' },
+                            { label: 'central west java', href: '/where-to-go/central west java' },
+                            { label: 'western west java', href: '/where-to-go/western west java' },
+                            { label: 'eastern west java', href: '/where-to-go/eastern west java' },
+                        ]}
+                    />
                     <a className={`uppercase font-karla hover:opacity-70 ${activePage == 'plan-your-trip' ? 'text-primary font-bold' : `${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}`}>Plan Your Trip</a>
                     <a className={`uppercase font-karla hover:opacity-70 ${activePage == 'travel-tips' ? 'text-primary font-bold' : `${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}`}>Travel Tips</a>
                     <Link href='/about'>
@@ -79,9 +91,19 @@ export const Navbar = ({ activePage }) => {
                     <Link href='/'>
                         <a className={`uppercase font-karla text-lg hover:opacity-70 ${activePage == 'home' ? 'text-primary font-bold' : 'text-neutral font-normal'}`}>home</a>
                     </Link>
-                    <Link href='/where-to-go/central west java'>
-                        <a className={`uppercase font-karla text-lg hover:opacity-70 ${activePage == 'where-to-go' ? 'text-primary font-bold' : 'text-neutral font-normal'}`}>Where To Go</a>
-                    </Link>
+                    <NavBarDropDownButton
+                        className='uppercase font-karla text-lg hover:opacity-70 text-neutral font-normal'
+                        title='Where To Go'
+                        activePage={activePage}
+                        setisShowMobileNavOptions={setisShowMobileNavOptions}
+                        options={[
+                            { label: 'northern west java', href: '/where-to-go/northern west java' },
+                            { label: 'southern west java', href: '/where-to-go/southern west java' },
+                            { label: 'central west java', href: '/where-to-go/central west java' },
+                            { label: 'western west java', href: '/where-to-go/western west java' },
+                            { label: 'eastern west java', href: '/where-to-go/eastern west java' },
+                        ]}
+                    />
                     <a className={`uppercase font-karla text-lg hover:opacity-70 ${activePage == 'plan-your-trip' ? 'text-primary font-bold' : 'text-neutral font-normal'}`}>Plan Your Trip</a>
                     <a className={`uppercase font-karla text-lg hover:opacity-70 ${activePage == 'travel-tips' ? 'text-primary font-bold' : 'text-neutral font-normal'}`}>Travel Tips</a>
                     <Link href='/about'>

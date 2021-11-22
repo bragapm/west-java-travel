@@ -16,12 +16,13 @@ const destination = [
     { title: 'Green Canyon', description: 'Adventure, Nature, Rural Life' },
 ];
 
-export const WhereToGoDestinantionSection = () => {
+export const WhereToGoDestinantionSection = ({ destinationSectionRef }) => {
     const [activePage, setactivePage] = useState(1);
     const [activeFilter, setactiveFilter] = useState([]);
 
+
     return (
-        <section>
+        <section ref={destinationSectionRef} id='destination-section'>
             <div className='md:px-20'>
                 <div className='w-full h-px bg-bordercolor mt-8 mb-8' />
             </div>
