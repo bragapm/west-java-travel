@@ -3,19 +3,18 @@ import Image from 'next/image';
 import { animate, stagger } from 'motion';
 import MemoIcCirlceArrow from '../custom-icons/IcCirlceArrow';
 
+const animationProperies = {
+    duration: 7,
+    delay: 1,
+    repeat: Infinity,
+    easing: 'linear'
+};
+
 export const HomeHeroSection = () => {
     const heroTitle = useRef();
     const heroDesc = useRef();
     const heroCarousel = useRef();
     const heroImgCarousel = useRef();
-
-    const animationProperies = {
-        duration: 7,
-        delay: 1,
-        repeat: Infinity,
-        easing: 'linear'
-    };
-
 
     useEffect(() => {
         if (heroTitle.current) {
@@ -46,121 +45,92 @@ export const HomeHeroSection = () => {
             );
         }
 
-        const imgHeroRef1 = document.getElementsByClassName('hero-img-1');
-        const imgHeroRef2 = document.getElementsByClassName('hero-img-2');
-        const imgHeroRef3 = document.getElementsByClassName('hero-img-3');
-        const imgHeroRef4 = document.getElementsByClassName('hero-img-4');
+        animate(
+            '.hero-img-1',
+            { opacity: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+            animationProperies
+        );
 
-        if (imgHeroRef1) {
-            animate(
-                imgHeroRef1,
-                { opacity: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
-                animationProperies
-            );
-        }
-        if (imgHeroRef2) {
-            animate(
-                imgHeroRef2,
-                { opacity: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
-                animationProperies
-            );
-        }
-        if (imgHeroRef3) {
-            animate(
-                imgHeroRef3,
-                { opacity: [0, 0, 0, 0, 1, 1, 1, 1, 1, 1] },
-                animationProperies
-            );
-        }
-        if (imgHeroRef4) {
-            animate(
-                imgHeroRef4,
-                { opacity: [0, 0, 0, 0, 0, 0, 0, 1, 1, 1] },
-                animationProperies
-            );
-        }
+        animate(
+            '.hero-img-2',
+            { opacity: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+            animationProperies
+        );
 
-        const imgHeroCarouselRef1 = document.getElementsByClassName('hero-carousel-1');
-        const imgHeroCarouselRef2 = document.getElementsByClassName('hero-carousel-2');
-        const imgHeroCarouselRef3 = document.getElementsByClassName('hero-carousel-3');
-        const imgHeroCarouselRef4 = document.getElementsByClassName('hero-carousel-4');
+        animate(
+            '.hero-img-3',
+            { opacity: [0, 0, 0, 0, 1, 1, 1, 1, 1, 1] },
+            animationProperies
+        );
 
-        if (imgHeroCarouselRef1) {
-            animate(
-                imgHeroCarouselRef1,
-                {
-                    scale: [1.2, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-                    opacity: [1, 0, 0, 0, 0, 1, 1, 1, 1, 1],
-                    x: [-20, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                },
-                animationProperies
-            );
-        }
-        if (imgHeroCarouselRef2) {
-            animate(
-                imgHeroCarouselRef2,
-                {
-                    scale: [1, 1.2, 1.2, 1.2, 1, 1, 1, 1, 1, 1],
-                    opacity: [1, 1, 1, 1, 0, 0, 0, 0, 1, 1],
-                    x: [0, -20, -20, -20, 0, 0, 0, 0, 0, 0],
-                },
-                animationProperies
-            );
-        }
-        if (imgHeroCarouselRef3) {
-            animate(
-                imgHeroCarouselRef3,
-                {
-                    scale: [1, 1, 1, 1, 1.2, 1.2, 1.2, 1, 1, 1],
-                    opacity: [1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
-                    x: [0, 0, 0, 0, -20, -20, -20, 0, 0, 0],
-                },
-                animationProperies
-            );
-        }
+        animate(
+            '.hero-img-4',
+            { opacity: [0, 0, 0, 0, 0, 0, 0, 1, 1, 1] },
+            animationProperies
+        );
 
-        if (imgHeroCarouselRef4) {
-            animate(
-                imgHeroCarouselRef4,
-                {
-                    scale: [1, 1, 1, 1, 1, 1, 1, 1.2, 1.2, 1.2],
-                    x: [0, 0, 0, 0, 0, 0, 0, -20, -20, -20],
-                },
-                animationProperies
-            );
-        }
+        animate(
+            '.hero-carousel-1',
+            {
+                scale: [1.2, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                opacity: [1, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+                x: [-20, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            },
+            animationProperies
+        );
 
-        const imgHeroTitleRef1 = document.getElementsByClassName('hero-title-1');
-        const imgHeroTitleRef2 = document.getElementsByClassName('hero-title-2');
-        const imgHeroTitleRef3 = document.getElementsByClassName('hero-title-3');
+        animate(
+            '.hero-carousel-2',
+            {
+                scale: [1, 1.2, 1.2, 1.2, 1, 1, 1, 1, 1, 1],
+                opacity: [1, 1, 1, 1, 0, 0, 0, 0, 1, 1],
+                x: [0, -20, -20, -20, 0, 0, 0, 0, 0, 0],
+            },
+            animationProperies
+        );
 
-        if (imgHeroTitleRef1) {
-            animate(
-                imgHeroTitleRef1,
-                {
-                    opacity: [1, 0, 0, 0, 0, 1, 1, 1, 1, 1],
-                },
-                animationProperies
-            );
-        }
-        if (imgHeroTitleRef2) {
-            animate(
-                imgHeroTitleRef2,
-                {
-                    opacity: [1, 1, 1, 1, 0, 0, 0, 0, 1, 1],
-                },
-                animationProperies
-            );
-        }
-        if (imgHeroTitleRef3) {
-            animate(
-                imgHeroTitleRef3,
-                {
-                    opacity: [1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
-                },
-                animationProperies
-            );
-        }
+        animate(
+            '.hero-carousel-3',
+            {
+                scale: [1, 1, 1, 1, 1.2, 1.2, 1.2, 1, 1, 1],
+                opacity: [1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+                x: [0, 0, 0, 0, -20, -20, -20, 0, 0, 0],
+            },
+            animationProperies
+        );
+
+        animate(
+            '.hero-carousel-4',
+            {
+                scale: [1, 1, 1, 1, 1, 1, 1, 1.2, 1.2, 1.2],
+                x: [0, 0, 0, 0, 0, 0, 0, -20, -20, -20],
+            },
+            animationProperies
+        );
+
+        animate(
+            '.hero-title-1',
+            {
+                opacity: [1, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+            },
+            animationProperies
+        );
+
+        animate(
+            '.hero-title-2',
+            {
+                opacity: [1, 1, 1, 1, 0, 0, 0, 0, 1, 1],
+            },
+            animationProperies
+        );
+
+        animate(
+            '.hero-title-3',
+            {
+                opacity: [1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+            },
+            animationProperies
+        );
 
         return;
     }, []);
@@ -174,7 +144,7 @@ export const HomeHeroSection = () => {
                     alt='img-hero'
                     layout='fill'
                     objectFit='cover'
-                    className='hero-img-1 absolute'
+                    className='hero-img-1'
                     quality={75}
                     priority={true}
                 />
@@ -183,7 +153,7 @@ export const HomeHeroSection = () => {
                     alt='img-hero'
                     layout='fill'
                     objectFit='cover'
-                    className='hero-img-2 absolute'
+                    className='hero-img-2'
                     quality={75}
                     priority={true}
                 />
@@ -192,7 +162,7 @@ export const HomeHeroSection = () => {
                     alt='img-hero'
                     layout='fill'
                     objectFit='cover'
-                    className='hero-img-3 absolute'
+                    className='hero-img-3'
                     quality={75}
                     priority={true}
                 />
@@ -201,7 +171,7 @@ export const HomeHeroSection = () => {
                     alt='img-hero'
                     layout='fill'
                     objectFit='cover'
-                    className='hero-img-4 absolute'
+                    className='hero-img-4'
                     quality={75}
                     priority={true}
                 />
