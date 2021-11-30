@@ -37,7 +37,7 @@ export const Navbar = ({ activePage }) => {
     return (
         <div className='flex flex-col relative'>
             <div ref={tipTop} />
-            <div className={`flex flex-row justify-between fixed top-0 left-0 right-0 z-40 p-5 md:px-20 ${activePage != 'home' && activePage != 'detail' ? `bg-white ${isTipTop ? 'shadow-none border-b border-bordercolor md:border-none' : 'shadow-lg'}` : `${isTipTop ? 'bg-transparent md:bg-gradient-to-b md:from-[#00000099] md:to-transparent' : 'bg-white shadow-lg'}`}  transition-all duration-300 items-center`}>
+            <div className={`flex flex-row justify-between fixed top-0 left-0 right-0 z-40 p-5 md:px-20 ${activePage != 'home' ? `bg-white ${isTipTop ? 'shadow-none border-b border-bordercolor md:border-none' : 'shadow-lg'}` : `${isTipTop ? 'bg-transparent md:bg-gradient-to-b md:from-[#00000099] md:to-transparent' : 'bg-white shadow-lg'}`}  transition-all duration-300 items-center`}>
                 <img src='/ic-logo.svg' className={`${isTipTop ? 'md:w-[120px]' : 'md:w-[60px]'} transition-all duration-300`} />
                 <button
                     onClick={() => {

@@ -6,7 +6,7 @@ import { DetailTravelTipsOthersSection } from "../../components/travel-tips-sect
 
 export default function TravelTipsDetail() {
     return (
-        <div className='overflow-hidden'>
+        <div className='smooth-scroll'>
             <Navbar activePage='home' />
             <DetailTravelTipsHeadSection />
             <DetailTravelTipsContentSection />

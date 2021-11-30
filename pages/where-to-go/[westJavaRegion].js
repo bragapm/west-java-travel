@@ -60,7 +60,7 @@ export default function WhereToGo() {
     return (
         <div className='smooth-scroll'>
             <Navbar activePage={router.query.westJavaRegion} />
-            <div className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-40 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${activeSection == 'destination-section' || activeSection == 'in-frame-section' || activeSection == 'trip-ideas-section' ? 'md:flex hidden md:opacity-100 opacity-0' : 'hidden opacity-0'} transition-all duration-300`}>
+            <div className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-30 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${activeSection == 'destination-section' || activeSection == 'in-frame-section' || activeSection == 'trip-ideas-section' ? 'md:flex hidden md:opacity-100 opacity-0' : 'hidden opacity-0'} transition-all duration-300`}>
                 <a href='#demografi-section' className='font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
                     01
                     <span className='font-karla text-neutral font-normal ml-5'>Demografi</span>

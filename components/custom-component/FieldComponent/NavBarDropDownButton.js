@@ -8,7 +8,7 @@ export const NavBarDropDownButton = ({ options, className, title, activePage, se
 
     return (
         <Listbox value={selected} onChange={setSelected}>
-            <div className={`relative z-30`}>
+            <div className={`relative z-50`}>
                 <Listbox.Button className={`${className ?? ''} uppercase ring-transparent flex flex-row items-center`}>
                     {title}
                     <MemoIcArrowIos className={`ml-2 ${arrowClassName}`} />

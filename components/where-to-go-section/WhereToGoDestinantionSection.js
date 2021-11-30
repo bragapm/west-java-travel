@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Link from 'next/link';
 import Pagination from '../custom-component/Pagination';
 import { TabComponent } from '../custom-component/TabComponent';
 import { CheckBoxTileButton } from '../custom-component/FieldComponent/CheckBoxTileButton';
@@ -61,25 +62,27 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef }) => {
                                 </button>
                                 <div className='mt-5 md:mt-12 space-y-3 md:space-y-12'>
                                     {destination.map((data, idx) => {
-                                        return <div key={idx} className='flex flex-row space-x-4 items-start'>
-                                            <div className='w-[80px] md:w-[160px] h-[70px] md:h-[144px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
-                                                <img src='/img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
-                                            </div>
-                                            <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
-                                                <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-xl'>Green Canyon</h6>
-                                                <p className='font-karla text-neutral text-xs md:text-base mt-1.5 mb-1.5 oneline-text md:twoline-text'>Situ Patenggang adalah suatu danau yang terletak di kawasan objek wisata alam Bandung Selatan, tepatnya di Ciwidey</p>
-                                                <div className='flex flex-row'>
-                                                    <div className='flex flex-row space-x-2'>
-                                                        <img src='/ic-star.svg' alt='ic-star' />
-                                                        <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'><span className='font-bold'>4.0</span> (38 Ulasan)</p>
-                                                    </div>
-                                                    <div className='md:flex flex-row space-x-2 ml-6 hidden'>
-                                                        <img src='/ic-location.svg' alt='ic-star' />
-                                                        <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'>Kabupaten Bandung</p>
+                                        return <Link href='/destination/idDestination'>
+                                            <a key={idx} className='flex flex-row space-x-4 items-start hover:bg-bordercolor hover:bg-opacity-20 transition-all p-4'>
+                                                <div className='w-[80px] md:w-[160px] h-[70px] md:h-[144px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                                    <img src='/img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
+                                                </div>
+                                                <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
+                                                    <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-xl'>Green Canyon</h6>
+                                                    <p className='font-karla text-neutral text-xs md:text-base mt-1.5 mb-1.5 oneline-text md:twoline-text'>Situ Patenggang adalah suatu danau yang terletak di kawasan objek wisata alam Bandung Selatan, tepatnya di Ciwidey</p>
+                                                    <div className='flex flex-row'>
+                                                        <div className='flex flex-row space-x-2'>
+                                                            <img src='/ic-star.svg' alt='ic-star' />
+                                                            <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'><span className='font-bold'>4.0</span> (38 Ulasan)</p>
+                                                        </div>
+                                                        <div className='md:flex flex-row space-x-2 ml-6 hidden'>
+                                                            <img src='/ic-location.svg' alt='ic-star' />
+                                                            <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'>Kabupaten Bandung</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
+                                            </a>
+                                        </Link>
                                     })}
                                 </div>
                             </div>,
@@ -90,25 +93,27 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef }) => {
                                 </button>
                                 <div className='mt-5 md:mt-12 space-y-3 md:space-y-12'>
                                     {destination.map((data, idx) => {
-                                        return <div key={idx} className='flex flex-row space-x-4 items-start'>
-                                            <div className='w-[80px] md:w-[160px] h-[70px] md:h-[144px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
-                                                <img src='/img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
-                                            </div>
-                                            <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
-                                                <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-xl'>Green Canyon</h6>
-                                                <p className='font-karla text-neutral text-xs md:text-base mt-1.5 mb-1.5 oneline-text md:twoline-text'>Situ Patenggang adalah suatu danau yang terletak di kawasan objek wisata alam Bandung Selatan, tepatnya di Ciwidey</p>
-                                                <div className='flex flex-row'>
-                                                    <div className='flex flex-row space-x-2'>
-                                                        <img src='/ic-star.svg' alt='ic-star' />
-                                                        <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'><span className='font-bold'>4.0</span> (38 Ulasan)</p>
-                                                    </div>
-                                                    <div className='md:flex flex-row space-x-2 ml-6 hidden'>
-                                                        <img src='/ic-location.svg' alt='ic-star' />
-                                                        <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'>Kabupaten Bandung</p>
+                                        return <Link href='/destination/idDestination'>
+                                            <a key={idx} className='flex flex-row space-x-4 items-start hover:bg-bordercolor hover:bg-opacity-20 transition-all p-4'>
+                                                <div className='w-[80px] md:w-[160px] h-[70px] md:h-[144px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                                    <img src='/img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
+                                                </div>
+                                                <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
+                                                    <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-xl'>Green Canyon</h6>
+                                                    <p className='font-karla text-neutral text-xs md:text-base mt-1.5 mb-1.5 oneline-text md:twoline-text'>Situ Patenggang adalah suatu danau yang terletak di kawasan objek wisata alam Bandung Selatan, tepatnya di Ciwidey</p>
+                                                    <div className='flex flex-row'>
+                                                        <div className='flex flex-row space-x-2'>
+                                                            <img src='/ic-star.svg' alt='ic-star' />
+                                                            <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'><span className='font-bold'>4.0</span> (38 Ulasan)</p>
+                                                        </div>
+                                                        <div className='md:flex flex-row space-x-2 ml-6 hidden'>
+                                                            <img src='/ic-location.svg' alt='ic-star' />
+                                                            <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'>Kabupaten Bandung</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
+                                            </a>
+                                        </Link>
                                     })}
                                 </div>
                             </div>,
@@ -119,25 +124,27 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef }) => {
                                 </button>
                                 <div className='mt-5 md:mt-12 space-y-3 md:space-y-12'>
                                     {destination.map((data, idx) => {
-                                        return <div key={idx} className='flex flex-row space-x-4 items-start'>
-                                            <div className='w-[80px] md:w-[160px] h-[70px] md:h-[144px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
-                                                <img src='/img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
-                                            </div>
-                                            <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
-                                                <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-xl'>Green Canyon</h6>
-                                                <p className='font-karla text-neutral text-xs md:text-base mt-1.5 mb-1.5 oneline-text md:twoline-text'>Situ Patenggang adalah suatu danau yang terletak di kawasan objek wisata alam Bandung Selatan, tepatnya di Ciwidey</p>
-                                                <div className='flex flex-row'>
-                                                    <div className='flex flex-row space-x-2'>
-                                                        <img src='/ic-star.svg' alt='ic-star' />
-                                                        <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'><span className='font-bold'>4.0</span> (38 Ulasan)</p>
-                                                    </div>
-                                                    <div className='md:flex flex-row space-x-2 ml-6 hidden'>
-                                                        <img src='/ic-location.svg' alt='ic-star' />
-                                                        <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'>Kabupaten Bandung</p>
+                                        return <Link href='/destination/idDestination'>
+                                            <a key={idx} className='flex flex-row space-x-4 items-start hover:bg-bordercolor hover:bg-opacity-20 transition-all p-4'>
+                                                <div className='w-[80px] md:w-[160px] h-[70px] md:h-[144px] rounded-md md:rounded-2lg overflow-hidden flex-none'>
+                                                    <img src='/img-home-jan.jpg' className='w-full h-full object-cover rounded-md md:rounded-2lg hover:scale-110 transition duration-300' />
+                                                </div>
+                                                <div className='flex flex-col pl-4 md:pl-0 md:pt-4'>
+                                                    <h6 className='capitalize font-montserrat font-bold text-dark text-sm md:text-xl'>Green Canyon</h6>
+                                                    <p className='font-karla text-neutral text-xs md:text-base mt-1.5 mb-1.5 oneline-text md:twoline-text'>Situ Patenggang adalah suatu danau yang terletak di kawasan objek wisata alam Bandung Selatan, tepatnya di Ciwidey</p>
+                                                    <div className='flex flex-row'>
+                                                        <div className='flex flex-row space-x-2'>
+                                                            <img src='/ic-star.svg' alt='ic-star' />
+                                                            <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'><span className='font-bold'>4.0</span> (38 Ulasan)</p>
+                                                        </div>
+                                                        <div className='md:flex flex-row space-x-2 ml-6 hidden'>
+                                                            <img src='/ic-location.svg' alt='ic-star' />
+                                                            <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'>Kabupaten Bandung</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
+                                            </a>
+                                        </Link>
                                     })}
                                 </div>
                             </div>,
