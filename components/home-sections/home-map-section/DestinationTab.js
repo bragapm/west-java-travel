@@ -7,7 +7,7 @@ import { DestinationLoadingState } from './DestinationLoadingState';
 
 export const DestinationTab = ({ activeRegion, sector, setactiveHoverRegion }) => {
 
-    const { data, error } = useSWR(`https://panel.westjavatravel.com/items/objek_wisata?${sector}${activeRegion}`);
+    const { data, error } = useSWR(`https://panel.westjavatravel.com/items/objek_wisata?${sector}${activeRegion}&fields=*,images.directus_files_id`);
 
     if (error) return <DestinationErrorState message='Terjadi sebuah kesalahan, gagal mengambil data' />
     if (!data) return <DestinationLoadingState />
