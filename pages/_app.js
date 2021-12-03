@@ -1,8 +1,14 @@
 import Head from 'next/head'
+import { SWRConfig } from 'swr'
 import 'tailwindcss/tailwind.css'
 
 function MyApp({ Component, pageProps }) {
-  return <>
+  return <SWRConfig
+    value={{
+      refreshInterval: 3000,
+      fetcher: (resource, init) => fetch(resource, init).then(res => res.json())
+    }}
+  >
     <Head>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -15,7 +21,7 @@ function MyApp({ Component, pageProps }) {
       <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet" />
     </Head>
     <Component {...pageProps} />
-  </>
+  </SWRConfig>
 }
 
 export default MyApp

@@ -17,7 +17,7 @@ export const HomeDestinationSection = () => {
                 <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9 md:max-w-[650px] md:leading-tight z-10'>Temukan Yang Terbaik Dari Jawa Barat</h3>
             </div>
             <div className='flex flex-col md:flex-col-reverse items-center md:items-end md:-translate-y-20 z-10'>
-                <div className='flex flex-col md:flex-row mt-8 space-y-5 md:space-y-0 md:px-9'>
+                <div className='flex flex-col md:flex-row mt-8 space-y-5 w-full md:space-y-0 md:px-9'>
                     <div className='md:w-[25%]'>
                         <div className='flex flex-col space-y-5 md:mr-2.5'>
                             <div className='h-[200px] md:h-[270px] rounded-2lg  overflow-hidden relative group'>

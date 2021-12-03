@@ -2,12 +2,13 @@ import React from 'react'
 import MemoIcArrow from '../custom-icons/IcArrow'
 
 export const HomeMustVisitSection = () => {
+    
     return (
         <section className='px-5 md:px-20'>
             <h4 className='capitalize font-montserrat font-bold text-lg md:text-2.5xl text-dark'>Yang wajib di Jawa Barat</h4>
             <div className='w-full h-px bg-bordercolor mt-6' />
             <div className='flex flex-col divide-y divide-bordercolor md:divide-transparent'>
-                <div className='flex flex-col md:flex-row py-5'>
+                <div className='flex flex-col md:flex-row py-5 md:justify-between'>
                     <div className='flex flex-col md:w-4/12 md:pr-16'>
                         <h5 className='capitalize font-montserrat font-bold text-dark mb-2.5 md:text-xl'>northern West Java</h5>
                         <p className='font-karla text-neutral text-sm md:text-base'>Tempat untuk dikunjungi, jalan untuk dijelajahi, dan pengalaman khas.</p>
@@ -58,7 +59,7 @@ export const HomeMustVisitSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row py-5'>
+                <div className='flex flex-col md:flex-row py-5 md:justify-between'>
                     <div className='flex flex-col md:w-4/12 md:pr-16'>
                         <h5 className='capitalize font-montserrat font-bold text-dark mb-2.5 md:text-xl'>Southern West Java</h5>
                         <p className='font-karla text-neutral text-sm md:text-base'>Tempat untuk dikunjungi, jalan untuk dijelajahi, dan pengalaman khas.</p>
@@ -109,7 +110,7 @@ export const HomeMustVisitSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row py-5'>
+                <div className='flex flex-col md:flex-row py-5 md:justify-between'>
                     <div className='flex flex-col md:w-4/12 md:pr-16'>
                         <h5 className='capitalize font-montserrat font-bold text-dark mb-2.5 md:text-xl'>East West Java</h5>
                         <p className='font-karla text-neutral text-sm md:text-base'>Tempat untuk dikunjungi, jalan untuk dijelajahi, dan pengalaman khas.</p>
@@ -160,7 +161,7 @@ export const HomeMustVisitSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row py-5'>
+                <div className='flex flex-col md:flex-row py-5 md:justify-between'>
                     <div className='flex flex-col md:w-4/12 md:pr-16'>
                         <h5 className='capitalize font-montserrat font-bold text-dark mb-2.5 md:text-xl'>Western West Java</h5>
                         <p className='font-karla text-neutral text-sm md:text-base'>Tempat untuk dikunjungi, jalan untuk dijelajahi, dan pengalaman khas.</p>
@@ -211,7 +212,7 @@ export const HomeMustVisitSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row py-5'>
+                <div className='flex flex-col md:flex-row py-5 md:justify-between'>
                     <div className='flex flex-col md:w-4/12 md:pr-16'>
                         <h5 className='capitalize font-montserrat font-bold text-dark mb-2.5 md:text-xl'>Central West Java</h5>
                         <p className='font-karla text-neutral text-sm md:text-base'>Tempat untuk dikunjungi, jalan untuk dijelajahi, dan pengalaman khas.</p>

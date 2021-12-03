@@ -20,8 +20,6 @@ export default function WhereToGo() {
     const tripIdeasSectionRef = useRef();
     const [activeSection, setactiveSection] = useState('thumbnail');
 
-    console.log()
-
 
     useEffect(() => {
         const options = {
