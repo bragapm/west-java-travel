@@ -11,16 +11,16 @@ export const HomeMapSection = () => {
 
     return (
         <section className='flex flex-col md:flex-row px-5 md:px-20 md:pb-20'>
-            <div className='flex flex-col'>
+            <div className='flex flex-col md:w-1/2'>
                 <HomeSectionTitle title='INTERACTIVE MAP' />
                 <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9'>Jelajahi Jawa Barat</h3>
                 <p className='font-karla text-sm md:text-base text-neutral mt-4 md:pl-9 md:pt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing.</p>
                 <MemoHomeMap
                     activeHoverRegion={activeHoverRegion}
-                    className='scale-60 md:scale-125 scale -translate-x-28 md:translate-x-6 -translate-y-10 md:translate-y-24'
+                    className='scale-60 md:scale-125 scale -translate-x-28 md:translate-x-20 -translate-y-10 md:translate-y-32'
                 />
             </div>
-            <div className='flex flex-col -translate-y-20 md:translate-y-0 md:pl-40 md:pr-8 w-full'>
+            <div className='flex flex-col md:w-1/2 -translate-y-20 md:translate-y-0 md:pl-40 md:pr-8 w-full'>
                 <BorderedDropDownButton
                     options={[
                         { label: 'All Cities in West Java', value: '' },
