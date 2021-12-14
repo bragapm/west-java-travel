@@ -19,7 +19,7 @@ export const HomeAboutSection = () => {
                 <HomeSectionTitle title='ABOUT US' />
                 <h1 className='text-dark font-montserrat font-light text-3xl md:text-5.5xl mt-5 md:ml-9'>Kenapa Berlibur Di</h1>
                 <h1 className='text-dark font-montserrat font-bold italic text-5.5xl md:text-7.5xl md:ml-9'>Jawa Barat</h1>
-                <h1 className='text-neutral font-karla max-w-[50rem] mt-5 text-sm md:text-base md:ml-9 md:leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien sapien semper laoreet duis facilisis nisl risus vel. Velit nisl tincidunt dictum urna molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien sapien semper laoreet duis facilisis nisl risus vel. Velit nisl tincidunt dictum urna molestie.</h1>
+                <h1 className='text-neutral font-karla max-w-[50rem] mt-5 text-sm md:text-base md:ml-9 md:leading-8'>Jawa Barat mungkin bukan tempat yang pertama kali terpikirkan saat berkunjung ke Indonesia. Namun nyatanya, tempat ini merupakan hidden gem di Indonesia. Berbatasan dengan Laut Jawa di Utara dan Samudera Hindia di Selatan, Jawa Barat memiliki pesona tersendiri. Keanekaragaman budaya, keindahan alam dan keramahan masyarakatnya akan memberikan Anda pengalaman yang berbeda dan menakjubkan.</h1>
             </div>
             <HomeGallerySection />
 

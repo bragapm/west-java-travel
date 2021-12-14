@@ -1,7 +1,7 @@
 import React from 'react'
 import { SeasonImage } from './SeasonImage'
 
-export const SeasonItem = ({ seasonData, indx }) => {
+export const SeasonItem = ({ seasonData }) => {
 
 
     return (
@@ -10,7 +10,7 @@ export const SeasonItem = ({ seasonData, indx }) => {
                 <h3 className='uppercase text-center twoline-text text-yellow text-shadow font-montserrat font-bold text-base md:text-1.5xl'>{seasonData.nama_objek}</h3>
                 <p className='uppercase text-white font-karla font-bold text-sm md:text-base mt-2'>{!seasonData.visit_date ? 'Anytime' : seasonData.visit_date.length <= 1 ? seasonData.visit_date[0] : `${seasonData.visit_date[0]} - ${seasonData.visit_date[seasonData.visit_date.length - 1]}`}</p>
             </div>
-            <SeasonImage image={seasonData.images.length > 0 ? seasonData.images : null} indx={indx}/>
+            <SeasonImage image={seasonData.images == null ? null : seasonData.images.length > 0 ? seasonData.images : null}/>
         </div>
     )
 }

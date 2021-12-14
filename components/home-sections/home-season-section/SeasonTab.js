@@ -16,7 +16,7 @@ export const SeasonTab = ({ season }) => {
     return (
         <div className='pt-8 flex flex-row max-w-[100vw] overflow-scroll pb-5'>
             {data.data.map((seasonData, indx) => {
-                return <SeasonItem key={indx} indx={indx} seasonData={seasonData} />
+                return <SeasonItem key={indx} seasonData={seasonData} />
             })}
         </div>
     )

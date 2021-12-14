@@ -1,7 +1,6 @@
 import React from 'react'
 import useSWR from 'swr'
 import { HomeSectionTitle } from '../../custom-component/TextComponent/HomeSectionTitle'
-import MemoIcArrow from '../../custom-icons/IcArrow'
 import { GuideItems } from './GuideItems'
 
 
@@ -10,7 +9,7 @@ export const HomeGuideSection = () => {
     const { data, error } = useSWR(`https://panel.westjavatravel.com/items/travel_guide`);
 
     if (error) return <div />
-    if (!data) return <div>Loading...</div>
+    if (!data) return <div />
     if (!data.data) return <div />
     if (data.data.length == 0) return <div />
 
@@ -18,7 +17,8 @@ export const HomeGuideSection = () => {
         <section className='px-5 md:px-20 pb-20 relative'>
             <div className='flex flex-col z-10'>
                 <HomeSectionTitle title='Travel Guide' />
-                <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9 md:max-w-[700px] md:leading-tight z-10 capitalize max-w-[250px]'>Tips Wisata Idaman di Jawa Barat</h3>
+                <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9 md:max-w-[700px] md:leading-tight z-10 capitalize max-w-[250px]'>Tips Berwisata di Jawa Barat</h3>
+                <p className='font-karla text-sm md:text-base text-neutral mt-4 md:pl-9 md:mt-5'>Cari tahu cara terbaik untuk berwisata di Jawa Barat!</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-4 mt-8 space-y-8 md:px-9 md:gap-x-5 z-10'>
                 {(data.data).map((guide, indx) => {

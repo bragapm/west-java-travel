@@ -6,7 +6,7 @@ import { HomeDestinationSection } from '../components/home-sections/HomeDestinat
 import { HomeGuideSection } from '../components/home-sections/home-guide-section/HomeGuideSection'
 import { HomeHeroSection } from '../components/home-sections/HomeHeroSection'
 import { HomeInspirationSection } from '../components/home-sections/HomeInspirationSection'
-import { HomeMustVisitSection } from '../components/home-sections/HomeMustVisitSection'
+import { HomeMustVisitSection } from '../components/home-sections/home-must-visit-section/HomeMustVisitSection'
 import { HomeSeasonSection } from '../components/home-sections/home-season-section/HomeSeasonSection'
 import { HomeStorySection } from '../components/home-sections/HomeStorySection'
 import { Navbar } from '../components/Navbar'

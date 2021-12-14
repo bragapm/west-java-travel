@@ -27,9 +27,9 @@ export const TabComponent = ({ labels, children, labelsClassName, childrenClassN
                 }
             }}>
             <div className={`${labelsClassName ?? ''}`}>
-                <Tab.List className={`w-full flex flex-row font-karla text-sm md:text-base`}>
+                <Tab.List className={`w-full flex flex-row font-karla text-sm md:text-bas`}>
                     {labels.map((label, idx) => {
-                        return <Tab key={idx} className={({ selected }) => classNames = (`w-1/3 pb-3 ${selected ? 'text-primary font-bold' : 'text-neutral font-normal'} w-full`)}>{label}</Tab>
+                        return <Tab key={idx} className={({ selected }) => classNames = (`w-1/3 pb-3 ${selected ? 'text-primary font-bold' : 'text-neutral font-normal'} w-full `)}>{label}</Tab>
                     })}
                 </Tab.List>
                 <div className='flex flex-row border-b border-bordercolor'>

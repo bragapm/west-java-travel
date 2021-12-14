@@ -4,7 +4,7 @@ import { NavigationDropDownButton } from "../../components/custom-component/Fiel
 import { WhereToGoDemografiSection } from "../../components/where-to-go-section/WhereToGoDemografiSection";
 import { HomeSectionTitle } from "../../components/custom-component/TextComponent/HomeSectionTitle";
 import { useEffect, useRef, useState } from "react";
-import { WhereToGoDestinantionSection } from "../../components/where-to-go-section/WhereToGoDestinantionSection";
+import { WhereToGoDestinantionSection } from "../../components/where-to-go-section/where-to-go-detination-section/WhereToGoDestinantionSection";
 import { WhereToGoInFrameSection } from "../../components/where-to-go-section/WhereToGoInFrameSection";
 import { WhereToGoIdeasSection } from "../../components/where-to-go-section/WhereToGoIdeasSection";
 import { useRouter } from "next/dist/client/router";
@@ -20,6 +20,12 @@ export default function WhereToGo() {
     const tripIdeasSectionRef = useRef();
     const [activeSection, setactiveSection] = useState('thumbnail');
 
+    const router = useRouter();
+    const region = router.query.westJavaRegion;
+    const regionId = region == 'central west java' ? 5 :
+        region == 'southern west java' ? 1 :
+            region == 'eastern west java' ? 2 :
+                region == 'western west java' ? 3 : 4;
 
     useEffect(() => {
         const options = {
@@ -78,13 +84,13 @@ export default function WhereToGo() {
             </div>
             <div className='pt-20 md:pt-36' id='thumbnail'>
                 <div className='w-full overflow-hidden md:px-[7.5rem]'>
-                    <img src='/img-about-thumbnail.jpg' className='w-full h-full object-cover md:rounded-3xl' />
+                    <img src={regionId == 1 ? '/img-home-southern.jpg' : regionId == 2 ? '/img-home-eastern.jpg' : regionId == 3 ? '/img-home-western.jpg' : regionId == 5 ? '/img-home-central.jpg' : '/img-home-mountain.jpg'} className='w-full h-[157px] md:h-[515px] object-cover md:rounded-3xl' />
                 </div>
             </div>
             <div className='flex flex-row items-start'>
                 <div className='pt-10 px-5 md:px-20 md:w-8/12 md:-translate-y-24 md:bg-white md:rounded-tr-[1.875rem]'>
                     <HomeSectionTitle title='where to go' />
-                    <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-5 md:pl-9 md:leading-tight z-10 capitalize'>central west java</h3>
+                    <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-5 md:pl-9 md:leading-tight z-10 capitalize'>{region}</h3>
                     <p className='font-karla text-sm md:text-base text-neutral mt-4 md:pl-9 md:mt-5'>White Crater, The Magical Splendor and Hypnotizing Ambience of a Crater</p>
                     <div className='flex flex-col md:flex-row mt-8 space-y-6 md:space-y-0 md:space-x-10 md:pl-9'>
                         <div className='flex flex-row'>
@@ -146,8 +152,8 @@ export default function WhereToGo() {
                     </div>
                 </div>
             </div>
-            <WhereToGoDestinantionSection destinationSectionRef={destinationSectionRef} />
-            <WhereToGoInFrameSection inFrameSectionRef={inFrameSectionRef} />
+            <WhereToGoDestinantionSection destinationSectionRef={destinationSectionRef} region={region} regionId={regionId} />
+            <WhereToGoInFrameSection inFrameSectionRef={inFrameSectionRef} regionId={regionId} />
             <WhereToGoIdeasSection tripIdeasSectionRef={tripIdeasSectionRef} />
             <Footer />
         </div>

@@ -30,7 +30,8 @@ export const HomeAttractionSection = () => {
             <div className='w-full h-[315px] bg-gradient-to-b from-[#E4ECF4] to-pink-[#E4ECF4] absolute bottom-0 left-0 z-0 hidden md:block' />
             <div className='flex flex-col z-10 px-5 md:px-20'>
                 <HomeSectionTitle title='attraction' />
-                <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9 md:max-w-[700px] md:leading-tight z-10 capitalize'>Hal-Hal terbaik untuk dilakukan di jawa barat</h3>
+                <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9 md:max-w-[700px] md:leading-tight z-10 capitalize'>Nikmati Banyak Aktivitas di Jawa Barat</h3>
+                <p className='font-karla text-sm md:text-base text-neutral mt-4 md:pl-9 md:mt-5'>Ada banyak hal menyenangkan yang dapat Anda lakukan disini, mulai dari melihat pantai yang masih alami dengan ombak selancar yang luar biasa, memacu adrenalin dengan berbagai olahraga, mendaki gunung yang megah, hingga menikmati kehidupan perkotaan yang modern.</p>
             </div>
             <div className='flex flex-col z-10'>
                 <div className='attraction-items flex flex-row mt-10 mb-5 md:mb-8 pl-5 md:pl-28'>

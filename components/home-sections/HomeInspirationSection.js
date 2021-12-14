@@ -4,7 +4,7 @@ import MemoIcInstagram from '../custom-icons/IcInstagram'
 export const HomeInspirationSection = () => {
     return (
         <section className='flex flex-col z-10 px-5 md:px-20 mb-10'>
-            <h4 className='capitalize font-montserrat font-bold text-dark text-lg md:text-2.5xl z-10'>Inspirasi Perjalanan</h4>
+            <h4 className='capitalize font-montserrat font-bold text-dark text-lg md:text-2.5xl z-10'>#SmilingWestJava</h4>
             <div className='w-full h-px bg-bordercolor my-6 md:my-7' />
             <div className='flex flex-col md:flex-col-reverse items-center md:items-end md:-translate-y-28'>
                 <div className='grid grid-cols-6 z-10 gap-2.5 md:gap-3.5 w-full'>

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { SWRConfig } from 'swr'
 import 'tailwindcss/tailwind.css'
+import '../public/global.css'
 
 function MyApp({ Component, pageProps }) {
   return <SWRConfig

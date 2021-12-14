@@ -12,7 +12,7 @@ export const HomeSeasonSection = () => {
             <div className='flex flex-col z-10 px-5 md:px-20'>
                 <HomeSectionTitle title='Season highlight' />
                 <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9 md:max-w-[650px] md:leading-tight z-10'>Nikmati Setiap Musim Di Jawa Barat</h3>
-                <p className='font-karla text-sm md:text-base text-neutral mt-4 md:pl-9'>Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing.</p>
+                <p className='font-karla text-sm md:text-base text-neutral mt-4 md:pl-9 md:max-w-[650px]'>Anda dapat menikmati Musim Hujan yang sejuk dan Musim Panas yang cerah di Jawa Barat</p>
             </div>
             <div className='flex flex-col'>
                 <TabComponent

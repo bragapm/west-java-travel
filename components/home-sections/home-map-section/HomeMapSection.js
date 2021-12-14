@@ -14,7 +14,7 @@ export const HomeMapSection = () => {
             <div className='flex flex-col md:w-1/2'>
                 <HomeSectionTitle title='INTERACTIVE MAP' />
                 <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9'>Jelajahi Jawa Barat</h3>
-                <p className='font-karla text-sm md:text-base text-neutral mt-4 md:pl-9 md:pt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing.</p>
+                <p className='font-karla text-sm md:text-base text-neutral mt-4 md:pl-9 md:pt-5'>Jelajahi wisata Jawa Barat dari ujung barat Bogor hingga ujung timur Cirebon!</p>
                 <MemoHomeMap
                     activeHoverRegion={activeHoverRegion}
                     className='scale-60 md:scale-125 scale -translate-x-28 md:translate-x-20 -translate-y-10 md:translate-y-32'
@@ -39,19 +39,19 @@ export const HomeMapSection = () => {
                         <DestinationTab
                             key='1'
                             activeRegion={activeRegion.value}
-                            sector='filter[sector][_in]=["Destination"]'
+                            sector='filter={"sector":{"_eq":"Destination"}}'
                             setactiveHoverRegion={setactiveHoverRegion}
                         />,
                         <DestinationTab
                             key='2'
                             activeRegion={activeRegion.value}
-                            sector='filter[sector][_in]=["Restaurant"]'
+                            sector='filter={"sector":{"_eq":"Restaurant"}}'
                             setactiveHoverRegion={setactiveHoverRegion}
                         />,
                         <DestinationTab
                             key='3'
                             activeRegion={activeRegion.value}
-                            sector='filter[sector][_in]=["Accomodation"]'
+                            sector='filter={"sector":{"_eq":"Accomodation"}}'
                             setactiveHoverRegion={setactiveHoverRegion}
                         />,
                     ]}
