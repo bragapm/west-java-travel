@@ -43,9 +43,9 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef, region, re
                             <div key='3' className='flex flex-row items-center justify-center gap-x-2 md:gap-x-2.5'><MemoIcAccomodation className='md:block hidden' />Accomodation</div>,
                         ]}
                         children={[
-                            <WhereToGoDestinationTab key='1' sector='filter[sector][_in]=["Destination"]' activeRegion={`&filter[region][_eq]=${regionId}`} />,
-                            <WhereToGoDestinationTab key='2' sector='filter[sector][_in]=["Restaurant"]' activeRegion={`&filter[region][_eq]=${regionId}`} />,
-                            <WhereToGoDestinationTab key='3' sector='filter[sector][_in]=["Accomodation"]' activeRegion={`&filter[region][_eq]=${regionId}`} />,
+                            <WhereToGoDestinationTab key='1' sector='filter={ "sector": { "_in": ["Destination"] }}' activeRegion={`&filter[region][_eq]=${regionId}`} />,
+                            <WhereToGoDestinationTab key='2' sector='filter={ "sector": { "_in": ["Restaurant"] }}' activeRegion={`&filter[region][_eq]=${regionId}`} />,
+                            <WhereToGoDestinationTab key='3' sector='filter={ "sector": { "_in": ["Accomodation"] }}' activeRegion={`&filter[region][_eq]=${regionId}`} />,
                         ]}
                     />
                 </div>

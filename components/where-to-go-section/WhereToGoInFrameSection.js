@@ -13,17 +13,16 @@ export const WhereToGoInFrameSection = ({ inFrameSectionRef, regionId }) => {
         if (data) {
             if (data.data) {
                 for (let i = 0; i < data.data.length; i++) {
-                    if (data.data[i].images.length != 0) {
-                        for (let j = 0; j < data.data[i].images.length; j++) {
-                            if (data.data[i].images[j] != null) {
-                                allImages.push(data.data[i].images[j]);
+                    if (data.data[i].images != null) {
+                        if (data.data[i].images.length != 0) {
+                            for (let j = 0; j < data.data[i].images.length; j++) {
+                                if (data.data[i].images[j] != null) {
+                                    allImages.push(data.data[i].images[j]);
+                                }
                             }
                         }
                     }
                 }
-
-                console.log(allImages);
-
                 setimages([...allImages]);
             }
         }

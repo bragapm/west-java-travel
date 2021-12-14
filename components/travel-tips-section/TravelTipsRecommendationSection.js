@@ -52,9 +52,8 @@ export const TravelTipsRecommendationSection = () => {
                     <h3 className='font-bold text-dark text-xl md:text-2xl font-montserrat mb-5 md:mb-8 ml-5 md:ml-12'>Rekomendasi Tips</h3>
                     <div className='recommendation-item flex flex-row md:flex-col gap-4 md:gap-8 px-5 md:pr-20 md:pl-10 md:h-full md:justify-between md:pb-20'>
                         {dummyTravelRecommendationData.map((recommendation, indx) => {
-                            return <Link href='/travel-tips/idTravelTips'>
+                            return <Link key={indx} href='/travel-tips/idTravelTips'>
                                 <a
-                                    key={indx}
                                     className='flex flex-col md:flex-row-reverse flex-none max-w-[254px] md:max-w-full md:justify-between hover:bg-bordercolor hover:bg-opacity-20 transition-all md:p-2'>
                                     <img src='/img-about-thumbnail.jpg' className='rounded-md h-[160px] md:h-[80px] w-full md:w-[80px] object-cover mb-4 md:ml-20' />
                                     <div className='flex flex-col'>
