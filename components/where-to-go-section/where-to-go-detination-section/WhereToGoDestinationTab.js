@@ -5,13 +5,15 @@ import { DestinationErrorState } from '../../home-sections/home-map-section/Dest
 import { WhereToGoDestinationImage } from './WhereToGoDestinationImage';
 import Pagination from '../../custom-component/Pagination';
 
-export const WhereToGoDestinationTab = ({ sector, activeRegion }) => {
+export const WhereToGoDestinationTab = ({ sector, activeRegion, activeAttractions, searchValue }) => {
 
     const [activePage, setactivePage] = useState(1);
     const [totalData, settotalData] = useState(10);
 
-    const { data, error } = useSWR(`https://panel.westjavatravel.com/items/objek_wisata?${sector}${activeRegion}&fields=*,images.directus_files_id&limit=5&page=${activePage}`);
-    const { data: total } = useSWR(`https://panel.westjavatravel.com/items/objek_wisata?${sector}${activeRegion}&aggregate[count]=id`);
+    const { data, error } = useSWR(`https://panel.westjavatravel.com/items/objek_wisata?filter={"_and":[${sector},${activeRegion}${activeAttractions}]}&fields=*,images.directus_files_id&limit=5&page=${activePage}${searchValue}`);
+    const { data: total } = useSWR(`https://panel.westjavatravel.com/items/objek_wisata?filter={"_and":[${sector},${activeRegion}${activeAttractions}]}&aggregate[count]=id${searchValue}`);
+
+    console.log(`https://panel.westjavatravel.com/items/objek_wisata?filter={"_and":[${sector},${activeRegion}${activeAttractions}]}&fields=*,images.directus_files_id&limit=5&page=${activePage}`);
 
     useEffect(() => {
         if (total) {
@@ -34,7 +36,7 @@ export const WhereToGoDestinationTab = ({ sector, activeRegion }) => {
             </button>
             <div className='mt-5 md:mt-12 space-y-3 md:space-y-6 mb-10'>
                 {data.data.map((destination, idx) => {
-                    return <Link key={idx} href='/destination/idDestination'>
+                    return <Link key={idx} href={`/destination/${destination.id}`}>
                         <a className='flex flex-row space-x-4 items-start hover:bg-bordercolor hover:bg-opacity-20 transition-all p-4'>
                             <WhereToGoDestinationImage image={destination.images.length > 0 ? destination.images : null} />
                             <div className='flex flex-col pl-2 md:pl-0 md:pt-4'>
@@ -46,7 +48,7 @@ export const WhereToGoDestinationTab = ({ sector, activeRegion }) => {
                                         <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'><span className='font-bold'>4.0</span> (38 Ulasan)</p>
                                     </div> */}
                                     <div className='flex-row space-x-2 flex'>
-                                        <img src='/ic-location.svg' alt='ic-star' />
+                                        <img src='/ic-location.svg' alt='ic-location' />
                                         <p className='font-karla text-neutral text-xs md:text-sm mt-1.5 mb-2'>{destination.address == null ? 'Alamat untuk destinasi ini belum tersedia. Cek info mengenai destinasi ini di halaman detail' : destination.address}</p>
                                     </div>
                                 </div>

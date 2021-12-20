@@ -9,7 +9,7 @@ import { WhereToGoDestinationTab } from './WhereToGoDestinationTab';
 
 export const WhereToGoDestinantionSection = ({ destinationSectionRef, region, regionId }) => {
     const [activeFilter, setactiveFilter] = useState([]);
-
+    const [searchValue, setsearchValue] = useState('');
 
     return (
         <section ref={destinationSectionRef} id='destination-section'>
@@ -21,9 +21,11 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef, region, re
                     <h3 className='capitalize font-bold font-montserrat text-dark text-xl md:text-2.5xl mb-5'>Pilihan Destinasi terbaik di <span className='capitalize'>{region}</span> Java</h3>
                     <div className='flex-row flex bg-[#F2F4F5] rounded-md p-4 mb-5 w-full'>
                         <input
-                            placeholder='Cari destinasi, culinary, accomodation'
+                            value={searchValue}
                             onChange={(e) => {
+                                setsearchValue(e.target.value);
                             }}
+                            placeholder='Cari destinasi, culinary, accomodation'
                             onKeyDown={({ key }) => {
                                 if (key === "Enter") {
 
@@ -43,9 +45,9 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef, region, re
                             <div key='3' className='flex flex-row items-center justify-center gap-x-2 md:gap-x-2.5'><MemoIcAccomodation className='md:block hidden' />Accomodation</div>,
                         ]}
                         children={[
-                            <WhereToGoDestinationTab key='1' sector='filter={ "sector": { "_in": ["Destination"] }}' activeRegion={`&filter[region][_eq]=${regionId}`} />,
-                            <WhereToGoDestinationTab key='2' sector='filter={ "sector": { "_in": ["Restaurant"] }}' activeRegion={`&filter[region][_eq]=${regionId}`} />,
-                            <WhereToGoDestinationTab key='3' sector='filter={ "sector": { "_in": ["Accomodation"] }}' activeRegion={`&filter[region][_eq]=${regionId}`} />,
+                            <WhereToGoDestinationTab key='1' sector='{"sector":{"_eq":"Destination"}}' activeRegion={`{"region":{"_eq":${regionId}}}`} activeAttractions={activeFilter.length == 0 ? '' : `,${activeFilter.join()}`} searchValue={searchValue == '' ? '' : `&search=${searchValue}`} />,
+                            <WhereToGoDestinationTab key='2' sector='{"sector":{"_eq":"Restaurant"}}' activeRegion={`{"region":{"_eq":${regionId}}}`} activeAttractions={activeFilter.length == 0 ? '' : `,${activeFilter.join()}`} searchValue={searchValue == '' ? '' : `&search=${searchValue}`} />,
+                            <WhereToGoDestinationTab key='3' sector='{"sector":{"_eq":"Accomodation"}}' activeRegion={`{"region":{"_eq":${regionId}}}`} activeAttractions={activeFilter.length == 0 ? '' : `,${activeFilter.join()}`} searchValue={searchValue == '' ? '' : `&search=${searchValue}`} />,
                         ]}
                     />
                 </div>
@@ -54,42 +56,50 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef, region, re
                         <h3 className='capitalize font-bold font-montserrat text-dark text-xl mb-6'>Atraksi</h3>
                         <div className='grid grid-cols-2 pb-10'>
                             <CheckBoxTileButton
-                                value='Adventure'
+                                value='{"attraction":{"_contains":"Adventure"}}'
+                                title='Adventure'
                                 setactiveValue={setactiveFilter}
                                 activeValue={activeFilter}
                             />
                             <CheckBoxTileButton
-                                value='Shopping'
+                                value='{"attraction":{"_contains":"Shopping"}}'
+                                title='Shopping'
                                 setactiveValue={setactiveFilter}
                                 activeValue={activeFilter}
                             />
                             <CheckBoxTileButton
-                                value='Coast & Beach'
+                                value='{"attraction":{"_contains":"Coast and Beach"}}'
+                                title='Coast and Beach'
                                 setactiveValue={setactiveFilter}
                                 activeValue={activeFilter}
                             />
                             <CheckBoxTileButton
-                                value='Art & Cultures'
+                                value='{"attraction":{"_contains":"Art and Culture"}}'
+                                title='Art and Culture'
                                 setactiveValue={setactiveFilter}
                                 activeValue={activeFilter}
                             />
                             <CheckBoxTileButton
-                                value='Nature'
+                                value='{"attraction":{"_contains":"Nature"}}'
+                                title='Nature'
                                 setactiveValue={setactiveFilter}
                                 activeValue={activeFilter}
                             />
                             <CheckBoxTileButton
-                                value='Rural Life'
+                                value='{"attraction":{"_contains":"Rural Life"}}'
+                                title='Rural Life'
                                 setactiveValue={setactiveFilter}
                                 activeValue={activeFilter}
                             />
                             <CheckBoxTileButton
-                                value='Urban Life'
+                                value='{"attraction":{"_contains":"Urban Life"}}'
+                                title='Urban Life'
                                 setactiveValue={setactiveFilter}
                                 activeValue={activeFilter}
                             />
                             <CheckBoxTileButton
-                                value='Culinary'
+                                value='{"attraction":{"_contains":"Culinary"}}'
+                                title='Culinary'
                                 setactiveValue={setactiveFilter}
                                 activeValue={activeFilter}
                             />

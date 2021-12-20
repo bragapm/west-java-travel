@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const CheckBoxTileButton = ({ activeValue, setactiveValue, value }) => {
+export const CheckBoxTileButton = ({ activeValue, setactiveValue, value, title }) => {
     return (
         <div
             onClick={() => {
@@ -14,14 +14,14 @@ export const CheckBoxTileButton = ({ activeValue, setactiveValue, value }) => {
                     setactiveValue([...activeValue]);
                 }
             }}
-            className='rounded-md hover:bg-primary hover:bg-opacity-10'>
+            className='rounded-md hover:bg-primary hover:bg-opacity-10 cursor-pointer'>
             <input
                 checked={activeValue.includes(value)}
                 onChange={() => {}}
                 type="checkbox"
                 name='ayam'
-                className='m-3 border-gray text-yellow rounded focus:ring-yellow' />
-            <label className='w-full mr-3 mt-3 mb-3 font-karla text-neutral text-base flex-none'>{value}</label>
+                className='m-3 border-gray text-yellow rounded focus:ring-yellow cursor-pointer' />
+            <label className='w-full mr-3 mt-3 mb-3 font-karla text-neutral text-base flex-none cursor-pointer'>{title}</label>
         </div>
     )
 }

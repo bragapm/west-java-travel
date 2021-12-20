@@ -11,8 +11,6 @@ import { useRouter } from "next/dist/client/router";
 
 
 export default function WhereToGo() {
-    const router = useRouter();
-
     const thumbnailRef = useRef();
     const demografiSectionRef = useRef();
     const destinationSectionRef = useRef();

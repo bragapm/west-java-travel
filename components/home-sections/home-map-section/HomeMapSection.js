@@ -39,19 +39,19 @@ export const HomeMapSection = () => {
                         <DestinationTab
                             key='1'
                             activeRegion={activeRegion.value}
-                            sector='filter={"sector":{"_eq":"Destination"}}'
+                            sector='filter[sector][_eq]=Destination'
                             setactiveHoverRegion={setactiveHoverRegion}
                         />,
                         <DestinationTab
                             key='2'
                             activeRegion={activeRegion.value}
-                            sector='filter={"sector":{"_eq":"Restaurant"}}'
+                            sector='filter[sector][_eq]=Restaurant'
                             setactiveHoverRegion={setactiveHoverRegion}
                         />,
                         <DestinationTab
                             key='3'
                             activeRegion={activeRegion.value}
-                            sector='filter={"sector":{"_eq":"Accomodation"}}'
+                            sector='filter[sector][_eq]=Accomodation'
                             setactiveHoverRegion={setactiveHoverRegion}
                         />,
                     ]}

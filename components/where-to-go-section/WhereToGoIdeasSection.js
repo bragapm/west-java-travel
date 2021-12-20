@@ -14,7 +14,7 @@ export const WhereToGoIdeasSection = ({ tripIdeasSectionRef }) => {
     return (
         <section className='px-5 md:px-20 pb-20' ref={tripIdeasSectionRef} id='trip-ideas-section'>
             <h4 className='capitalize font-montserrat font-bold text-dark text-lg md:text-2.5xl z-10'>Trip Ideas</h4>
-            <div className='w-full h-px bg-bordercolor mt-6 md:mt-7' />
+            <div className='w-full h-px bg-bordercolor my-6 md:y-7' />
             <div className='grid grid-cols-1 md:grid-cols-4 space-y-8 md:gap-x-5 z-10'>
                 {(data.data).map((guide, indx) => {
                     return <GuideItems key={indx} guide={guide} />

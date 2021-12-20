@@ -50,7 +50,7 @@ export const TravelTipsRecommendationSection = () => {
                 </Link>
                 <div className='flex flex-col pt-8 md:pt-0 md:w-5/12 md:h-[600px]'>
                     <h3 className='font-bold text-dark text-xl md:text-2xl font-montserrat mb-5 md:mb-8 ml-5 md:ml-12'>Rekomendasi Tips</h3>
-                    <div className='recommendation-item flex flex-row md:flex-col gap-4 md:gap-8 px-5 md:pr-20 md:pl-10 md:h-full md:justify-between md:pb-20'>
+                    <div className='recommendation-item flex flex-row md:flex-col gap-4 px-5 md:pr-20 md:pl-10 md:h-full md:justify-between md:pb-20'>
                         {dummyTravelRecommendationData.map((recommendation, indx) => {
                             return <Link key={indx} href='/travel-tips/idTravelTips'>
                                 <a

@@ -1,5 +1,6 @@
 import React from 'react'
 import MemoIcArrow from '../../custom-icons/IcArrow'
+import { GuideImage } from './GuideImage'
 
 export const GuideItems = ({ guide }) => {
     return (
@@ -12,9 +13,7 @@ export const GuideItems = ({ guide }) => {
                     <MemoIcArrow className='text-primary' />
                 </button>
             </div>
-            <div className='overflow-hidden flex-none md:w-full w-[80px] h-[80px] md:h-[216px] rounded-md md:rounded-2lg'>
-                <img src={`https://panel.westjavatravel.com/assets/${guide.thumbnail}`} className='w-full h-full object-cover' />
-            </div>
+            <GuideImage />
         </div>
     )
 }
