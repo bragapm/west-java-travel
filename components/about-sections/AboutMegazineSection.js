@@ -29,8 +29,8 @@ export const AboutMegazineSection = ({ megazineSectionRef, megazineTopSectionRef
             <div className='w-full h-[900px] md:h-[338px] bg-gradient-to-b from-[#E4ECF4] to-pink-[#E4ECF4] z-0 mt-[153px] md:mt-[131px] px-5 md:px-20' >
                 <div className='flex flex-col md:flex-row -translate-y-28 md:-translate-y-20 space-y-16 md:space-y-0 md:justify-between md:space-x-10'>
                     <div className='flex flex-col md:flex-row md:items-end md:flex-1'>
-                        <div className='w-[150px] md:w-[253px] overflow-hidden rounded-md shadow-lg md:flex-none'>
-                            <img src='/img-sample-megazine.jpg' alt='img-megazone' className='object-cover w-full h-full' />
+                        <div className='w-[150px] h-[210.64px] md:w-[253px] md:h-[330px] overflow-hidden rounded-md shadow-lg md:flex-none'>
+                            <img src={`${data.data[0].banner ? `https://panel.westjavatravel.com/assets/${data.data[0].banner}?key=season-thumbnail` : '/img-placeholder.png'}`} alt='img-megazone' className='object-cover w-full h-full' />
                         </div>
                         <div className='flex flex-col md:pl-8 md:pb-6'>
                             <h4 className='text-primary font-bold font-karla text-sm md:text-base mt-8'>{data.data[0].id}</h4>
@@ -40,19 +40,19 @@ export const AboutMegazineSection = ({ megazineSectionRef, megazineTopSectionRef
                         </div>
                     </div>
                     <div className='flex flex-col md:flex-row md:items-end md:flex-1'>
-                        <div className='w-[150px] md:w-[253px] overflow-hidden rounded-md shadow-lg md:flex-none'>
-                            <img src='/img-sample-megazine.jpg' alt='img-megazone' className='object-cover w-full h-full' />
+                        <div className='w-[150px] h-[210.64px] md:w-[253px] md:h-[330px] overflow-hidden rounded-md shadow-lg md:flex-none'>
+                            <img src={`${data.data[1].banner ? `https://panel.westjavatravel.com/assets/${data.data[1].banner}?key=season-thumbnail` : '/img-placeholder.png'}`} alt='img-megazone' className='object-cover w-full h-full' />
                         </div>
                         <div className='flex flex-col md:pl-8 md:pb-6'>
                             <h4 className='text-primary font-bold font-karla text-sm md:text-base mt-8'>{data.data[1].id}</h4>
                             <h3 className='text-dark font-montserrat font-bold mt-1.5 md:text-xl'>{data.data[1].judul}</h3>
                             <p className='text-neutral font-karla text-sm md:text-base mt-2.5 twoline-text'>{data.data[1].deskripsi}</p>
-                            <a target="_blank" href={`https://panel.westjavatravel.com/assets/${data.data[0].majalah_trip_files[0].directus_files_id}`} className='uppercase text-white bg-[#011F56] flex-none mr-auto py-4 px-6 rounded-full font-karla font-bold text-sm mt-6'>Read the book</a>
+                            <a target="_blank" href={`https://panel.westjavatravel.com/assets/${data.data[1].majalah_trip_files[0].directus_files_id}`} className='uppercase text-white bg-[#011F56] flex-none mr-auto py-4 px-6 rounded-full font-karla font-bold text-sm mt-6'>Read the book</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div ref={megazineSectionRef} id='magazine-section'/>
+            <div ref={megazineSectionRef} id='magazine-section' />
         </div>
     );
 }
