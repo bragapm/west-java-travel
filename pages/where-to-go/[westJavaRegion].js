@@ -10,34 +10,21 @@ import { WhereToGoIdeasSection } from "../../components/where-to-go-section/Wher
 import { useRouter } from "next/dist/client/router";
 
 export async function getStaticPaths() {
+  let res = await fetch(
+    `https://panel.westjavatravel.com/items/region_wjt?fields=region`
+  );
+  res = await res.json();
+
   return {
-    paths: [
-      { params: { westJavaRegion: "southern west java" } },
-      { params: { westJavaRegion: "central west java" } },
-      { params: { westJavaRegion: "northern west java" } },
-      { params: { westJavaRegion: "western west java" } },
-      { params: { westJavaRegion: "eastern west java" } },
-    ],
+    paths: res.data.map((el) => ({
+      params: { westJavaRegion: el.region.toLowerCase() },
+    })),
     fallback: false,
   };
 }
 
 export async function getStaticProps({ params }) {
-  return {
-    props: { region: params.westJavaRegion },
-  };
-}
-
-export default function WhereToGo({ region }) {
-  const thumbnailRef = useRef();
-  const demografiSectionRef = useRef();
-  const destinationSectionRef = useRef();
-  const inFrameSectionRef = useRef();
-  const tripIdeasSectionRef = useRef();
-  const [activeSection, setactiveSection] = useState("thumbnail");
-
-  const router = useRouter();
-  // const region = router.query.westJavaRegion;
+  const region = params.westJavaRegion;
   const regionId =
     region == "central west java"
       ? 5
@@ -48,6 +35,36 @@ export default function WhereToGo({ region }) {
       : region == "western west java"
       ? 3
       : 4;
+
+  const resInFrame = await fetch(
+    `https://panel.westjavatravel.com/items/objek_wisata?filter[region][_eq]=${regionId}&fields=*,images.directus_files_id`
+  );
+
+  return {
+    props: { region, regionId, wtgInFrame: await resInFrame.json() },
+  };
+}
+
+export default function WhereToGo({ region, regionId, wtgInFrame }) {
+  const thumbnailRef = useRef();
+  const demografiSectionRef = useRef();
+  const destinationSectionRef = useRef();
+  const inFrameSectionRef = useRef();
+  const tripIdeasSectionRef = useRef();
+  const [activeSection, setactiveSection] = useState("thumbnail");
+
+  const router = useRouter();
+  // const region = router.query.westJavaRegion;
+  // const regionId =
+  //   region == "central west java"
+  //     ? 5
+  //     : region == "southern west java"
+  //     ? 1
+  //     : region == "eastern west java"
+  //     ? 2
+  //     : region == "western west java"
+  //     ? 3
+  //     : 4;
 
   useEffect(() => {
     const options = {
@@ -299,6 +316,7 @@ export default function WhereToGo({ region }) {
       <WhereToGoInFrameSection
         inFrameSectionRef={inFrameSectionRef}
         regionId={regionId}
+        data={wtgInFrame}
       />
       <WhereToGoIdeasSection tripIdeasSectionRef={tripIdeasSectionRef} />
       <Footer />
