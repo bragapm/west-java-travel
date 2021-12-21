@@ -3,20 +3,40 @@ import { DestinationDetailGallerySection } from "../../components/destination-de
 import { DestinationDetailHeadSection } from "../../components/destination-detail/DestinationDetailHeadSection";
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
-import useSWR from 'swr';
-import { useRouter } from "next/dist/client/router";
 
-export default function DestinationDetail() {
-    const router = useRouter();
+export async function getStaticPaths() {
+    let res = await fetch(
+        `https://panel.westjavatravel.com/items/objek_wisata?fields=id`
+    );
+    res = await res.json();
 
-    const { data, error } = useSWR(`https://panel.westjavatravel.com/items/objek_wisata?filter[id][_eq]=${router.query.idDestination}&fields=*,images.directus_files_id`);
+    return {
+        paths: res.data.map((el) => ({
+            params: { idDestination: el.id.toString() },
+        })),
+        fallback: false,
+    };
+}
 
+export async function getStaticProps({ params }) {
+    const id = params.idDestination;
+
+    const data = await fetch(
+        `https://panel.westjavatravel.com/items/objek_wisata?filter[id][_eq]=${id}&fields=*,images.directus_files_id`
+    );
+
+    return {
+        props: { data: await data.json() },
+    };
+}
+
+export default function DestinationDetail({ data }) {    
     return (
         <div className='smooth-scroll'>
             <Navbar activePage='home' />
-            <DestinationDetailHeadSection destination={error ? null : !data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
-            <DestinationDetailContentSection destination={error ? null : !data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
-            <DestinationDetailGallerySection destination={error ? null : !data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
+            <DestinationDetailHeadSection destination={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
+            <DestinationDetailContentSection destination={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
+            <DestinationDetailGallerySection destination={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
             <Footer />
         </div>
     )

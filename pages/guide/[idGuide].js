@@ -5,16 +5,39 @@ import { Navbar } from "../../components/Navbar";
 import useSWR from 'swr';
 import { useRouter } from "next/dist/client/router";
 
-export default function GuideDetail() {
-    const router = useRouter();
+export async function getStaticPaths() {
+    let res = await fetch(
+        `https://panel.westjavatravel.com/items/travel_guide?fields=id`
+    );
+    res = await res.json();
 
-    const { data, error } = useSWR(`https://panel.westjavatravel.com/items/travel_guide?filter[id][_eq]=${router.query.idGuide}`);
+    return {
+        paths: res.data.map((el) => ({
+            params: { idGuide: el.id.toString() },
+        })),
+        fallback: false,
+    };
+}
+
+export async function getStaticProps({ params }) {
+    const id = params.idGuide;
+
+    const data = await fetch(
+        `https://panel.westjavatravel.com/items/travel_guide?filter[id][_eq]=${id}`
+    );
+
+    return {
+        props: { data: await data.json() },
+    };
+}
+
+export default function GuideDetail({ data }) {
 
     return (
         <div className='smooth-scroll'>
             <Navbar activePage='home' />
-            <GuideHeadSection guide={error ? null : !data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
-            <GuideContentSection guide={error ? null : !data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
+            <GuideHeadSection guide={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
+            <GuideContentSection guide={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
             <Footer />
         </div>
     )

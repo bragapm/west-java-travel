@@ -29,12 +29,12 @@ export async function getStaticProps({ params }) {
     region == "central west java"
       ? 5
       : region == "southern west java"
-      ? 1
-      : region == "eastern west java"
-      ? 2
-      : region == "western west java"
-      ? 3
-      : 4;
+        ? 1
+        : region == "eastern west java"
+          ? 2
+          : region == "western west java"
+            ? 3
+            : 4;
 
   const resInFrame = await fetch(
     `https://panel.westjavatravel.com/items/objek_wisata?filter[region][_eq]=${regionId}&fields=*,images.directus_files_id`
@@ -54,17 +54,6 @@ export default function WhereToGo({ region, regionId, wtgInFrame }) {
   const [activeSection, setactiveSection] = useState("thumbnail");
 
   const router = useRouter();
-  // const region = router.query.westJavaRegion;
-  // const regionId =
-  //   region == "central west java"
-  //     ? 5
-  //     : region == "southern west java"
-  //     ? 1
-  //     : region == "eastern west java"
-  //     ? 2
-  //     : region == "western west java"
-  //     ? 3
-  //     : 4;
 
   useEffect(() => {
     const options = {
@@ -102,13 +91,12 @@ export default function WhereToGo({ region, regionId, wtgInFrame }) {
     <div className='smooth-scroll'>
       <Navbar activePage={router.query.westJavaRegion} />
       <div
-        className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-30 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${
-          activeSection == "destination-section" ||
-          activeSection == "in-frame-section" ||
-          activeSection == "trip-ideas-section"
+        className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-30 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${activeSection == "destination-section" ||
+            activeSection == "in-frame-section" ||
+            activeSection == "trip-ideas-section"
             ? "md:flex hidden md:opacity-100 opacity-0"
             : "hidden opacity-0"
-        } transition-all duration-300`}
+          } transition-all duration-300`}
       >
         <a
           href='#demografi-section'
@@ -121,55 +109,49 @@ export default function WhereToGo({ region, regionId, wtgInFrame }) {
         </a>
         <a
           href='#destination-section'
-          className={`font-montserrat ${
-            activeSection == "destination-section"
+          className={`font-montserrat ${activeSection == "destination-section"
               ? "text-dark text-opacity-50"
               : "text-neutral text-opacity-40"
-          } transition-all font-bold text-xl flex flex-row items-center`}
+            } transition-all font-bold text-xl flex flex-row items-center`}
         >
           02
           <span
-            className={`font-karla text-neutral ${
-              activeSection == "destination-section"
+            className={`font-karla text-neutral ${activeSection == "destination-section"
                 ? "font-bold"
                 : "font-normal"
-            } transition-all ml-5`}
+              } transition-all ml-5`}
           >
             Destinasi & Atraksi
           </span>
         </a>
         <a
           href='#in-frame-section'
-          className={`font-montserrat ${
-            activeSection == "in-frame-section"
+          className={`font-montserrat ${activeSection == "in-frame-section"
               ? "text-dark text-opacity-50"
               : "text-neutral text-opacity-40"
-          } transition-all font-bold text-xl flex flex-row items-center`}
+            } transition-all font-bold text-xl flex flex-row items-center`}
         >
           03
           <span
-            className={`font-karla text-neutral ${
-              activeSection == "in-frame-section" ? "font-bold" : "font-normal"
-            } transition-all ml-5`}
+            className={`font-karla text-neutral ${activeSection == "in-frame-section" ? "font-bold" : "font-normal"
+              } transition-all ml-5`}
           >
             Southern West Java In Frame
           </span>
         </a>
         <a
           href='#trip-ideas-section'
-          className={`font-montserrat ${
-            activeSection == "trip-ideas-section"
+          className={`font-montserrat ${activeSection == "trip-ideas-section"
               ? "text-dark text-opacity-50"
               : "text-neutral text-opacity-40"
-          } transition-all font-bold text-xl flex flex-row items-center`}
+            } transition-all font-bold text-xl flex flex-row items-center`}
         >
           04
           <span
-            className={`font-karla text-neutral ${
-              activeSection == "trip-ideas-section"
+            className={`font-karla text-neutral ${activeSection == "trip-ideas-section"
                 ? "font-bold"
                 : "font-normal"
-            } transition-all ml-5`}
+              } transition-all ml-5`}
           >
             Trip Ideas
           </span>
@@ -182,12 +164,12 @@ export default function WhereToGo({ region, regionId, wtgInFrame }) {
               regionId == 1
                 ? "/img-home-southern.jpg"
                 : regionId == 2
-                ? "/img-home-eastern.jpg"
-                : regionId == 3
-                ? "/img-home-western.jpg"
-                : regionId == 5
-                ? "/img-home-central.jpg"
-                : "/img-home-mountain.jpg"
+                  ? "/img-home-eastern.jpg"
+                  : regionId == 3
+                    ? "/img-home-western.jpg"
+                    : regionId == 5
+                      ? "/img-home-central.jpg"
+                      : "/img-home-mountain.jpg"
             }
             className='w-full h-[157px] md:h-[515px] object-cover md:rounded-3xl'
           />
