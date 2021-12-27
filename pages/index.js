@@ -21,7 +21,7 @@ export default function Home() {
       <HomeDestinationSection />
       <HomeSeasonSection />
       <HomeAttractionSection />
-      <HomeMustVisitSection />
+      {/* <HomeMustVisitSection /> */}
       <HomeStorySection />
       <HomeInspirationSection />
       <HomeGuideSection />

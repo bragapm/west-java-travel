@@ -72,7 +72,23 @@ export const HomeAttractionSection = () => {
                             <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 md:pb-10 z-10 items-center'>
                                 <h4 className='uppercase text-yellow text-shadow text-xs md:text-1.5xl font-montserrat font-bold'>Shopping</h4>
                             </div>
-                            <img src='img-home-mountain.jpg' alt='img-mountain' className='w-full h-full object-cover object-right group-hover:scale-125 transition duration-500' />
+                            <img src='/img-home-shopping.jpg' alt='img-mountain' className='w-full h-full object-cover object-right group-hover:scale-125 transition duration-500' />
+                        </div>
+                    </div>
+                    <div className='pr-2 md:pr-4'>
+                        <div className='flex-none h-[214px] w-[142px] md:w-[298px] md:h-[450px] rounded-md md:rounded-2lg overflow-hidden relative group'>
+                            <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 md:pb-10 z-10 items-center'>
+                                <h4 className='uppercase text-yellow text-shadow text-xs md:text-1.5xl font-montserrat font-bold'>Art & Cultures</h4>
+                            </div>
+                            <img src='/img-home-art.jpg' alt='img-mountain' className='w-full h-full object-cover object-right group-hover:scale-125 transition duration-500' />
+                        </div>
+                    </div>
+                    <div className='pr-2 md:pr-4'>
+                        <div className='flex-none h-[214px] w-[142px] md:w-[298px] md:h-[450px] rounded-md md:rounded-2lg overflow-hidden relative group'>
+                            <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end p-4 md:pb-10 z-10 items-center'>
+                                <h4 className='uppercase text-yellow text-shadow text-xs md:text-1.5xl font-montserrat font-bold'>RURAL LIFE</h4>
+                            </div>
+                            <img src='/img-home-rural-life.jpg' alt='img-mountain' className='w-full h-full object-cover object-right group-hover:scale-125 transition duration-500' />
                         </div>
                     </div>
 

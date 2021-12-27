@@ -59,7 +59,7 @@ export default function WhereToGo({ region, regionId, wtgInFrame }) {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.2,
+      threshold: 0.,
     };
 
     const observer = new IntersectionObserver(([entry]) => {
@@ -243,6 +243,7 @@ export default function WhereToGo({ region, regionId, wtgInFrame }) {
           />
           <WhereToGoDemografiSection
             demografiSectionRef={demografiSectionRef}
+            region={region}
           />
         </div>
         <div className='hidden md:flex flex-row items-center sticky top-0 pb-32 w-4/12 justify-center pr-20 pt-28'>
