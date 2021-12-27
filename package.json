@@ -10,7 +10,6 @@
   "dependencies": {
     "@headlessui/react": "^1.4.1",
     "@tailwindcss/forms": "^0.3.4",
-    "github-markdown-css": "^5.1.0",
     "jw-paginate": "^1.0.4",
     "motion": "^10.4.0",
     "next": "^12.0.3",
