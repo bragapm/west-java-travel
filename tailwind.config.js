@@ -83,7 +83,7 @@ module.exports = {
     plugin(function ({ addUtilities }) {
       const newUtilities = {
         '.text-gradient': {
-          'background': '-webkit-linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.75))',
+          'background': '-webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9))',
           '-webkit-background-clip': 'text',
           '-webkit-text-fill-color': 'transparent',
           'filter': 'drop-shadow(0px 5px 5px #000000)',

@@ -31,7 +31,7 @@ export const HomeStorySection = () => {
                     </div>
                     <div className='absolute w-full h-full z-0 top-0 overflow-hidden rounded-2lg hidden opacity-0 group-hover:block group-hover:opacity-100 transition duration-500'>
                         <iframe
-                            src={`https://www.youtube.com/embed/6WbJYry2zg4${isPlaying}`}
+                            src={`https://www.youtube.com/embed/C2D0VTOa8-M${isPlaying}`}
                             frameBorder='0'
                             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                             allowFullScreen='1'

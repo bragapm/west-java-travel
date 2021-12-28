@@ -111,7 +111,7 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef, region, re
                             <a className={`h-[150px] rounded-2lg  overflow-hidden relative group ${region == 'northern west java' ? 'hidden' : ''}`}>
                                 <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end px-5 py-6 z-10'>
                                     <h4 className='uppercase text-yellow text-shadow text-lg md:text-xl font-montserrat font-bold'>Northern west java</h4>
-                                    <p className='uppercase font-karla text-white text-sm'>14 destination options</p>
+                                    {/* <p className='uppercase font-karla text-white text-sm'>14 destination options</p> */}
                                 </div>
                                 <img src='/img-home-mountain.jpg' alt='img-mountain' className='w-full h-full object-cover object-center group-hover:scale-125 transition duration-500' />
                             </a>
@@ -120,7 +120,7 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef, region, re
                             <a className={`h-[150px] rounded-2lg  overflow-hidden relative group ${region == 'southern west java' ? 'hidden' : ''}`}>
                                 <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end px-5 py-6 z-10'>
                                     <h4 className='uppercase text-yellow text-shadow text-lg md:text-xl font-montserrat font-bold'>Southern west java</h4>
-                                    <p className='uppercase font-karla text-white text-sm'>14 destination options</p>
+                                    {/* <p className='uppercase font-karla text-white text-sm'>14 destination options</p> */}
                                 </div>
                                 <img src='/img-home-southern.jpg' alt='img-mountain' className='w-full h-full object-cover object-right group-hover:scale-125 transition duration-500' />
                             </a>
@@ -129,7 +129,7 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef, region, re
                             <a className={`h-[150px] rounded-2lg  overflow-hidden relative group ${region == 'central west java' ? 'hidden' : ''}`}>
                                 <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end px-5 py-6 z-10'>
                                     <h4 className='uppercase text-yellow text-shadow text-lg md:text-xl font-montserrat font-bold'>Central west java</h4>
-                                    <p className='uppercase font-karla text-white text-sm'>14 destination options</p>
+                                    {/* <p className='uppercase font-karla text-white text-sm'>14 destination options</p> */}
                                 </div>
                                 <img src='/img-home-central.jpg' alt='img-mountain' className='w-full h-full object-cover object-right group-hover:scale-125 transition duration-500' />
                             </a>
@@ -138,7 +138,7 @@ export const WhereToGoDestinantionSection = ({ destinationSectionRef, region, re
                             <a className={`h-[150px] rounded-2lg  overflow-hidden relative group ${region == 'eatern west java' ? 'hidden' : ''}`}>
                                 <div className='bg-gradient-to-t from-black via-transparent to-transparent absolute w-full h-full flex flex-col justify-end px-5 py-6 z-10'>
                                     <h4 className='uppercase text-yellow text-shadow text-lg md:text-xl font-montserrat font-bold'>eastern west java</h4>
-                                    <p className='uppercase font-karla text-white text-sm'>14 destination options</p>
+                                    {/* <p className='uppercase font-karla text-white text-sm'>14 destination options</p> */}
                                 </div>
                                 <img src='/img-home-eastern.jpg' alt='img-mountain' className='w-full h-full object-cover group-hover:scale-125 transition duration-500' />
                             </a>
