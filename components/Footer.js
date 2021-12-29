@@ -48,7 +48,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className='w-full h-px bg-white bg-opacity-10 my-10' />
-            <p className='text-white font-montserrat font-medium text-xs md:text-sm text-center'>© 2021 Visit West Java. All Right Reserved</p>
+            <p className='text-white font-montserrat font-medium text-xs md:text-sm text-center'>© 2021 West Java Travel. All Right Reserved</p>
         </section>
     )
 }

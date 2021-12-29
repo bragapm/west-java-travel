@@ -15,7 +15,7 @@ export const AboutMegazineSection = ({ megazineSectionRef, megazineTopSectionRef
                 <div className='h-px w-full flex-none bg-bordercolor mt-3 mb-8' />
             </div>
             <h2 className='capitalize font-nothing-you-could-do text-blue text-3.5xl md:text-4.5xl mx-5 md:mx-20 md:mt-16'>smiling west java</h2>
-            <h2 className='font-bold font-montserrat text-dark text-3xl md:text-5.5xl mx-5 md:mx-20'>Megazine Article & News</h2>
+            <h2 className='font-bold font-montserrat text-dark text-3xl md:text-5.5xl mx-5 md:mx-20'>Magazine Article & News</h2>
             <p className='text-neutral font-karla text-sm md:text-lg mx-5 md:mx-20 pt-3 md:pt-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien sapien semper laoreet duis facilisis</p>
             <div className='flex flex-col items-end absolute -right-6 md:-right-16 top-72 md:top-20 z-0'>
                 <div className='flex flex-row mr-10 md:mr-20 items-end'>
