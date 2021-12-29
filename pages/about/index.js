@@ -60,7 +60,7 @@ export default function About() {
                 </a>
                 <a href='#megazine-section' className={`font-montserrat ${activeSection == 'megazine-section' || activeSection == 'magazine-section' ? 'text-dark text-opacity-50' : 'text-neutral text-opacity-40'} transition-all font-bold text-xl flex flex-row items-center`}>
                     02
-                    <span className={`font-karla text-neutral ${activeSection == 'megazine-section' || activeSection == 'magazine-section' ? 'font-bold' : 'font-normal'} transition-all ml-5`}>Megazine</span>
+                    <span className={`font-karla text-neutral ${activeSection == 'megazine-section' || activeSection == 'magazine-section' ? 'font-bold' : 'font-normal'} transition-all ml-5`}>Magazine</span>
                 </a>
                 <a href='#brochure-section' className={`font-montserrat ${activeSection == 'brochure-section' ? 'text-dark text-opacity-50' : 'text-neutral text-opacity-40'} transition-all font-bold text-xl flex flex-row items-center`}>
                     03
@@ -100,7 +100,7 @@ export default function About() {
                         </a>
                         <a href='#megazine-section' className='pb-5 font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
                             02
-                            <span className='font-karla text-neutral font-normal ml-5'>Megazine</span>
+                            <span className='font-karla text-neutral font-normal ml-5'>Magazine</span>
                         </a>
                         <a href='#brochure-section' className='font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>
                             03
