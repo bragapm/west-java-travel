@@ -182,7 +182,7 @@ export const HomeHeroSection = () => {
             <div className='w-screen h-screen absolute top-0 flex flex-col justify-center md:pl-20 pt-28'>
                 <div className='flex flex-col md:flex-row items-start md:items-center'>
                     <div className='flex flex-col md:pb-24 md:pr-0 pr-10 px-5 md:px-0'>
-                        <div className='md:max-h-[9rem] max-h-[5.5rem] overflow-hidden'>
+                        <div className='md:max-h-[9rem] max-h-[5rem] overflow-hidden'>
                             <div ref={heroTitle} className='flex flex-col'>
                                 <h1 className='hero-title-1 md:text-7xl text-4xl font-bold font-montserrat text-gradient pt-1 uppercase twoline-text whitespace-nowrap'>Gunung<br />Padang Site</h1>
                                 <h1 className='hero-title-2 md:text-7xl text-4xl font-bold font-montserrat text-gradient pt-1 uppercase twoline-text whitespace-nowrap'>Tangkuban<br />Perahu</h1>
@@ -226,13 +226,13 @@ export const HomeHeroSection = () => {
                     </div>
                 </div>
                 <div className='flex flex-col-reverse md:px-0 px-5 md:flex-row md:-translate-y-28 pr-5 md:pr-0 space-y-3 space-x-0 md:space-y-0 md:space-x-3'>
-                    <button className='text-karla bg-white mb-4 md:mb-0 px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-dark mt-3 md:mt-0'>
+                    <a  href='#map-section' className='text-karla bg-white mb-4 md:mb-0 px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-dark mt-3 md:mt-0'>
                         DISCOVER MORE
-                    </button>
-                    <button className='text-karla bg-glassmorphic px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-white flex flex-row items-center justify-center'>
+                    </a>
+                    <a href='#destination-section' className='text-karla bg-glassmorphic px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-white flex flex-row items-center justify-center'>
                         EXPLORE NOW
                         <MemoIcCirlceArrow className='text-white ml-4' />
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>

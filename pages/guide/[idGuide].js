@@ -1,9 +1,8 @@
+import Head from 'next/head';
 import { Footer } from "../../components/Footer";
 import { GuideContentSection } from "../../components/guide-section/GuideContentSection";
 import { GuideHeadSection } from "../../components/guide-section/GuideHeadSection";
 import { Navbar } from "../../components/Navbar";
-import useSWR from 'swr';
-import { useRouter } from "next/dist/client/router";
 
 export async function getStaticPaths() {
     let res = await fetch(
@@ -34,7 +33,10 @@ export async function getStaticProps({ params }) {
 export default function GuideDetail({ data }) {
 
     return (
-        <div className='smooth-scroll'>
+        <div>
+            <Head>
+                <title>West Java Travel</title>
+            </Head>
             <Navbar activePage='home' />
             <GuideHeadSection guide={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
             <GuideContentSection guide={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />

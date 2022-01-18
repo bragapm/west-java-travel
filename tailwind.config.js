@@ -122,12 +122,6 @@ module.exports = {
           'line-clamp': '3',
           '-webkit-box-orient': 'vertical'
         },
-        '.smooth-scroll': {
-          'overflow-y': 'scroll',
-          'scroll-behavior': 'smooth',
-          'display': 'block',
-          'height': '100vh',
-        },
         '.circle-clip': {
           'clip-path': 'circle(0% at 94% 6%)',
         },

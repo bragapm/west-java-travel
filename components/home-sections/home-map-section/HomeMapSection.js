@@ -10,7 +10,7 @@ export const HomeMapSection = () => {
     const [activeHoverRegion, setactiveHoverRegion] = useState(null);
 
     return (
-        <section className='flex flex-col md:flex-row px-5 md:px-20 md:pb-20'>
+        <section className='flex flex-col md:flex-row px-5 md:px-20 md:pb-20' id='map-section'>
             <div className='flex flex-col md:w-1/2'>
                 <HomeSectionTitle title='INTERACTIVE MAP' />
                 <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9'>Jelajahi Jawa Barat</h3>

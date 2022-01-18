@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { DestinationDetailContentSection } from "../../components/destination-detail/DestinationDetailContentSection";
 import { DestinationDetailGallerySection } from "../../components/destination-detail/DestinationDetailGallerySection";
 import { DestinationDetailHeadSection } from "../../components/destination-detail/DestinationDetailHeadSection";
@@ -30,9 +31,12 @@ export async function getStaticProps({ params }) {
     };
 }
 
-export default function DestinationDetail({ data }) {    
+export default function DestinationDetail({ data }) {
     return (
-        <div className='smooth-scroll'>
+        <div>
+            <Head>
+                <title>West Java Travel</title>
+            </Head>
             <Navbar activePage='home' />
             <DestinationDetailHeadSection destination={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
             <DestinationDetailContentSection destination={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />

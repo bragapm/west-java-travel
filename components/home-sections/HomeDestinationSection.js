@@ -4,7 +4,7 @@ import { HomeSectionTitle } from '../custom-component/TextComponent/HomeSectionT
 
 export const HomeDestinationSection = () => {
     return (
-        <section className='px-5 md:px-20 md:py-10 relative overflow-visible'>
+        <section className='px-5 md:px-20 md:py-10 relative overflow-visible' id='destination-section'>
             <div className='w-[500px] h-[1011px] bg-gradient-to-b from-[#E4ECF4] to-pink-[#E4ECF4] rounded-tl-[100px] absolute top-0 right-0 md:flex flex-col justify-end items-end hidden z-0'>
                 <div className='flex flex-row items-end'>
                     <div className='rounded-full bg-green w-[20px] h-[20px] mr-3' />

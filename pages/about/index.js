@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { AboutHistorySection } from "../../components/about-sections/AboutHistorySection";
 import { AboutMegazineSection } from "../../components/about-sections/AboutMegazineSection";
 import { NavigationDropDownButton } from "../../components/custom-component/FieldComponent/NavigationDropDownButton";
@@ -51,7 +52,10 @@ export default function About() {
     }, [])
 
     return (
-        <div className='smooth-scroll'>
+        <div>
+            <Head>
+                <title>West Java Travel</title>
+            </Head>
             <Navbar activePage='about' />
             <div className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-30 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${activeSection == 'magazine-section' || activeSection == 'megazine-section' || activeSection == 'brochure-section' ? 'md:flex hidden md:opacity-100 opacity-0' : 'hidden opacity-0'} transition-all duration-300`}>
                 <a href='#history-section' className='font-montserrat text-neutral text-opacity-40 font-bold text-xl flex flex-row items-center'>

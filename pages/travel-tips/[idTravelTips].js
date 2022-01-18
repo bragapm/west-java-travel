@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
 import { DetailTravelTipsContentSection } from "../../components/travel-tips-section/DetailTravelTipsContentSection";
@@ -33,7 +34,10 @@ export async function getStaticProps({ params }) {
 
 export default function TravelTipsDetail({ data }) {
     return (
-        <div className='smooth-scroll'>
+        <div>
+            <Head>
+                <title>West Java Travel</title>
+            </Head>
             <Navbar activePage='home' />
             <DetailTravelTipsHeadSection data={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />
             <DetailTravelTipsContentSection data={!data ? null : data.data == null ? null : data.data.length == 0 ? null : data.data[0]} />

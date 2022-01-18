@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Navbar } from "../../components/Navbar";
 import { Footer } from "../../components/Footer";
 import { NavigationDropDownButton } from "../../components/custom-component/FieldComponent/NavigationDropDownButton";
@@ -88,7 +89,10 @@ export default function WhereToGo({ region, regionId, wtgInFrame }) {
   }, []);
 
   return (
-    <div className='smooth-scroll'>
+    <div>
+      <Head>
+        <title>West Java Travel</title>
+      </Head>
       <Navbar activePage={router.query.westJavaRegion} />
       <div
         className={`fixed px-20 py-8 gap-x-16 top-[5.4rem] left-0 right-0 z-30 bg-white shadow-lg border-t border-bordercolor w-full h-10 ${activeSection == "destination-section" ||
