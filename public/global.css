@@ -5,3 +5,35 @@
 html {
     scroll-behavior: smooth;
 }
+
+.custom-overlay {
+    height: 100%;
+    width: 100%;
+}
+.custom-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(8, 108, 180, 1);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(8, 108, 180, 0.7);
+}

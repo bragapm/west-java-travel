@@ -9,7 +9,7 @@ export const HomeInspirationSection = () => {
     if (error) return <div />
 
     return (
-        <section className='flex flex-col z-10 px-5 md:px-20 mb-10'>
+        <section className='flex flex-col z-10 px-5 md:px-20 mb-0 py-16 lg:pb-0'>
             <h4 className='capitalize font-montserrat font-bold text-dark text-lg md:text-2.5xl z-10 w-40'>#SmilingWestJava</h4>
             <div className='w-full h-px bg-bordercolor my-6 md:my-7' />
             <div className='flex flex-col md:flex-col-reverse items-center md:items-end md:-translate-y-28'>

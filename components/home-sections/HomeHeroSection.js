@@ -4,7 +4,7 @@ import { animate, stagger } from 'motion';
 import MemoIcCirlceArrow from '../custom-icons/IcCirlceArrow';
 
 const animationProperies = {
-    duration: 7,
+    duration: 10,
     delay: 1,
     repeat: Infinity,
     easing: 'linear'
@@ -138,7 +138,7 @@ export const HomeHeroSection = () => {
 
     return (
         <section className='h-[110vh] relative'>
-            <div className='w-screen h-[110vh] relative'>
+            <div className='w-screen h-[110vh] relative custom-overlay'>
                 <Image
                     src='/v1635751512/west-java-travel/img-hero-1_t7jpua.png'
                     alt='img-hero'
@@ -176,60 +176,60 @@ export const HomeHeroSection = () => {
                     priority={true}
                 />
             </div>
-            <div className='w-screen h-[10vh] px-20 absolute bottom-0 hidden md:block'>
-                <div className='bg-white w-full h-full rounded-t-3xl' />
+            <div className='w-screen h-[5vh] px-18 absolute bottom-0 hidden md:block'>
+                <div className='bg-white w-full h-full rounded-t-[2rem]' />
             </div>
-            <div className='w-screen h-screen absolute top-0 flex flex-col justify-center md:pl-20 pt-28'>
-                <div className='flex flex-col md:flex-row items-start md:items-center'>
-                    <div className='flex flex-col md:pb-24 md:pr-0 pr-10 px-5 md:px-0'>
-                        <div className='md:max-h-[9rem] max-h-[5rem] overflow-hidden'>
+            <div className='w-screen h-screen absolute top-0 flex flex-col justify-center xl:pl-20 pt-28'>
+                <div className='flex flex-col xl:flex-row items-center'>
+                    <div className='flex flex-col xl:pb-4 xl:pr-0 pr-5 px-5 md:px-0 xl:mt-[-5em]'>
+                        <div className='xl:max-h-[9rem] lg:max-h-[6rem] max-h-[5rem] overflow-hidden'>
                             <div ref={heroTitle} className='flex flex-col'>
-                                <h1 className='hero-title-1 md:text-7xl text-4xl font-bold font-montserrat text-gradient pt-1 uppercase twoline-text whitespace-nowrap'>Gunung<br />Padang Site</h1>
-                                <h1 className='hero-title-2 md:text-7xl text-4xl font-bold font-montserrat text-gradient pt-1 uppercase twoline-text whitespace-nowrap'>Tangkuban<br />Perahu</h1>
-                                <h1 className='hero-title-3 md:text-7xl text-4xl font-bold font-montserrat text-gradient pt-1 uppercase twoline-text whitespace-nowrap'>Green Canyon<br />Pangandaran</h1>
-                                <h1 className='hero-title-1 md:text-7xl text-4xl font-bold font-montserrat text-gradient pt-1 uppercase twoline-text whitespace-nowrap'>Gunung<br />Padang Site</h1>
+                                <h1 className='hero-title-1 xl:text-7xl lg:text-5xl text-4xl text-center xl:text-left md:text-center sm:text-center font-bold font-montserrat text-gradient pt-1 uppercase twoline-text whitespace-nowrap'>Gunung<br />Padang Site</h1>
+                                <h1 className='hero-title-2 xl:text-7xl lg:text-5xl text-4xl text-center xl:text-left md:text-center sm:text-center font-bold font-montserrat text-gradient pt-1 uppercase twoline-text whitespace-nowrap'>Tangkuban<br />Perahu</h1>
+                                <h1 className='hero-title-3 xl:text-7xl lg:text-5xl text-4xl text-center xl:text-left md:text-center sm:text-center font-bold font-montserrat text-gradient pt-1 uppercase twoline-text whitespace-nowrap'>Green Canyon<br />Pangandaran</h1>
+                                <h1 className='hero-title-1 xl:text-7xl lg:text-5xl text-4xl text-center xl:text-left md:text-center sm:text-center font-bold font-montserrat text-gradient pt-1 uppercase twoline-text whitespace-nowrap'>Gunung<br />Padang Site</h1>
                             </div>
                         </div>
                         <div className='md:max-h-14 max-h-[4.5rem] overflow-hidden mt-3 md:mt-6'>
                             <div ref={heroDesc} className='flex flex-col'>
-                                <h1 className='md:text-lg text-white max-w-[36.5rem] font-karla twoline-text'>The Gunung Padang site is a prehistoric megalithic relic in the form of a staircase located on the border of Gunung Padang and Panggulaan Hamlets, Cianjur Regency, West Java.</h1>
-                                <h1 className='md:text-lg text-white max-w-[36.5rem] font-karla twoline-text'>Sitting elegantly while enjoying the panorama of northern Bandung, from the distance Tangkuban Parahu Mountain standing elegantly. </h1>
-                                <h1 className='md:text-lg text-white max-w-[36.5rem] font-karla twoline-text'>Green Canyon is located at the Kertayasa Village, in the Ciamis Regency, West Java Province, about 31 km or 45 minutes drive from Pangandaran Beach.</h1>
-                                <h1 className='md:text-lg text-white max-w-[36.5rem] font-karla twoline-text'>The Gunung Padang site is a prehistoric megalithic relic in the form of a staircase located on the border of Gunung Padang and Panggulaan Hamlets, Cianjur Regency, West Java.</h1>
+                                <h1 className='md:text-lg xl:text-left text-center md:text-center sm:text-center text-white max-w-[36.5rem] font-karla twoline-text'>The Gunung Padang site is a prehistoric megalithic relic in the form of a staircase located on the border of Gunung Padang and Panggulaan Hamlets, Cianjur Regency, West Java.</h1>
+                                <h1 className='md:text-lg xl:text-left text-center md:text-center sm:text-center text-white max-w-[36.5rem] font-karla twoline-text'>Sitting elegantly while enjoying the panorama of northern Bandung, from the distance Tangkuban Parahu Mountain standing elegantly. </h1>
+                                <h1 className='md:text-lg xl:text-left text-center md:text-center sm:text-center text-white max-w-[36.5rem] font-karla twoline-text'>Green Canyon is located at the Kertayasa Village, in the Ciamis Regency, West Java Province, about 31 km or 45 minutes drive from Pangandaran Beach.</h1>
+                                <h1 className='md:text-lg xl:text-left text-center md:text-center sm:text-center text-white max-w-[36.5rem] font-karla twoline-text'>The Gunung Padang site is a prehistoric megalithic relic in the form of a staircase located on the border of Gunung Padang and Panggulaan Hamlets, Cianjur Regency, West Java.</h1>
                             </div>
                         </div>
                     </div>
-                    <div className='py-8 md:py-16 overflow-hidden w-full'>
+                    <div className='py-16 lg:py-20 xl:py-24 overflow-hidden w-full'>
                         <div ref={heroCarousel} className='flex md:flex-row ml-16 md:ml-40'>
-                            <div ref={heroImgCarousel} className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-1 pr-2 md:pr-0'>
-                                <img src='/img-hero-carousel-1.jpg' alt='img-carousel' className='rounded-2lg shadow-2xl' />
+                            <div ref={heroImgCarousel} className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-1 p-1 md:p-2 rounded-xl'>
+                                <img src='/img-hero-carousel-1.jpg' alt='img-carousel' className='w-[100%] rounded-2lg md:rounded-2xl shadow-2xl p-1 md:p-2 bg-white' />
                             </div>
-                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-2 pr-2 md:pr-0'>
-                                <img src='/img-hero-carousel-2.jpg' alt='img-carousel' className='rounded-2lg shadow-2xl' />
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-2 p-1 md:p-2 rounded-xl'>
+                                <img src='/img-hero-carousel-2.jpg' alt='img-carousel' className='w-[100%] rounded-2lg md:rounded-2xl shadow-2xl p-1 md:p-2 bg-white' />
                             </div>
-                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-3 pr-2 md:pr-0'>
-                                <img src='/img-hero-carousel-3.jpg' alt='img-carousel' className='rounded-2lg shadow-2xl' />
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-3 p-1 md:p-2 rounded-xl'>
+                                <img src='/img-hero-carousel-3.jpg' alt='img-carousel' className='w-[100%] rounded-2lg md:rounded-2xl shadow-2xl p-1 md:p-2 bg-white' />
                             </div>
-                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-4 pr-2 md:pr-0'>
-                                <img src='/img-hero-carousel-1.jpg' alt='img-carousel' className='rounded-2lg shadow-2xl' />
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-4 p-1 md:p-2 rounded-xl'>
+                                <img src='/img-hero-carousel-1.jpg' alt='img-carousel' className='w-[100%] rounded-2lg md:rounded-2xl shadow-2xl p-1 md:p-2 bg-white' />
                             </div>
-                            <div className='min-w-[8rem] md:min-w-[16.875rem] pr-2 md:pr-0'>
-                                <img src='/img-hero-carousel-2.jpg' alt='img-carousel' className='rounded-2lg shadow-2xl' />
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] p-1 md:p-2 rounded-xl'>
+                                <img src='/img-hero-carousel-2.jpg' alt='img-carousel' className='w-[100%] rounded-2lg md:rounded-2xl shadow-2xl p-1 md:p-2 bg-white' />
                             </div>
-                            <div className='min-w-[8rem] md:min-w-[16.875rem] pr-2 md:pr-0'>
-                                <img src='/img-hero-carousel-3.jpg' alt='img-carousel' className='rounded-2lg shadow-2xl' />
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] p-1 md:p-2 rounded-xl'>
+                                <img src='/img-hero-carousel-3.jpg' alt='img-carousel' className='w-[100%] rounded-2lg md:rounded-2xl shadow-2xl p-1 md:p-2 bg-white' />
                             </div>
-                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-1 pr-2 md:pr-0'>
-                                <img src='/img-hero-carousel-1.jpg' alt='img-carousel' className='rounded-2lg shadow-2xl' />
+                            <div className='min-w-[8rem] md:min-w-[16.875rem] hero-carousel-1 p-1 md:p-2 rounded-xl'>
+                                <img src='/img-hero-carousel-1.jpg' alt='img-carousel' className='w-[100%] rounded-2lg md:rounded-2xl shadow-2xl p-1 md:p-2 bg-white' />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col-reverse md:px-0 px-5 md:flex-row md:-translate-y-28 pr-5 md:pr-0 space-y-3 space-x-0 md:space-y-0 md:space-x-3'>
-                    <a  href='#map-section' className='text-karla bg-white mb-4 md:mb-0 px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-dark mt-3 md:mt-0'>
+                <div className='flex items-center xl:items-start flex-col-reverse md:px-0 px-5 xl:flex-row xl:-translate-y-28 pr-5 xl:pr-0 space-y-3 space-x-0 xl:space-y-0 xl:space-x-3 xl:mt-[-4em]'>
+                    <a href='#map-section' className='text-karla bg-white px-4 md:px-6 py-[1.125rem] mt-6 xl:mt-0 rounded-full text-base md:text-lg font-bold text-dark flex flex-row items-center justify-center w-[250px]'>
                         DISCOVER MORE
                     </a>
-                    <a href='#destination-section' className='text-karla bg-glassmorphic px-4 md:px-6 py-[1.125rem] rounded-full text-base md:text-lg font-bold text-white flex flex-row items-center justify-center'>
+                    <a href='#destination-section' className='text-karla bg-glassmorphic px-4 md:px-6 py-[1.125rem] mt-6 xl:mt-0 rounded-full text-base md:text-lg font-bold text-white flex flex-row items-center justify-center w-[250px]'>
                         EXPLORE NOW
                         <MemoIcCirlceArrow className='text-white ml-4' />
                     </a>

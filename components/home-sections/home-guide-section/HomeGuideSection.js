@@ -14,13 +14,13 @@ export const HomeGuideSection = () => {
     if (data.data.length == 0) return <div />
 
     return (
-        <section className='px-5 md:px-20 pb-20 relative'>
+        <section className='px-5 md:px-20 pb-20 pt-16 relative'>
             <div className='flex flex-col z-30'>
                 <HomeSectionTitle title='Travel Guide' />
                 <h3 className='font-bold text-dark font-montserrat text-2xl md:text-5.5xl mt-6 md:pl-9 md:max-w-[700px] md:leading-tight z-10 capitalize max-w-[250px]'>Tips Berwisata di Jawa Barat</h3>
                 <p className='font-karla text-sm md:text-base text-neutral mt-4 md:pl-9 md:mt-5 z-20'>Cari tahu cara terbaik untuk berwisata di Jawa Barat!</p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-4 mt-8 space-y-8 md:px-9 md:gap-x-5 z-10'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-8 space-y-8 md:px-9 md:gap-x-5 z-10'>
                 {(data.data).map((guide, indx) => {
                     return <GuideItems key={indx} guide={guide} />
                 })}

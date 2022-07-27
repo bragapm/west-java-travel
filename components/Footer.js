@@ -8,7 +8,7 @@ import MemoIcYoutube from './custom-icons/IcYoutube'
 
 export const Footer = () => {
     return (
-        <section className='bg-[#086CB4] flex flex-col px-5 md:px-20 pt-14 pb-8'>
+        <section className='bg-[#086CB4] flex flex-col px-5 md:px-20 py-12'>
             <div className='flex-col md:flex-row flex md:justify-between md:items-start'>
                 <div className='flex flex-col items-center md:items-start md:max-w-[629px]'>
                     <img src='/ic-logo.svg' className='w-[100px] md:w-[126.27px]' />

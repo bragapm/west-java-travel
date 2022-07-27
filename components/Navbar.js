@@ -37,18 +37,18 @@ export const Navbar = ({ activePage }) => {
     return (
         <div className='flex flex-col relative'>
             <div ref={tipTop} />
-            <div className={`flex flex-row justify-between fixed top-0 left-0 right-0 z-40 p-5 md:px-20 ${activePage != 'home' ? `bg-white ${isTipTop ? 'shadow-none border-b border-bordercolor md:border-none' : 'shadow-lg'}` : `${isTipTop ? 'bg-transparent md:bg-gradient-to-b md:from-[#00000099] md:to-transparent' : 'bg-white shadow-lg'}`}  transition-all duration-300 items-center`}>
+            <div className={`flex flex-row justify-between fixed top-0 left-0 right-0 z-40 p-5 lg:px-20 ${activePage != 'home' ? `bg-white ${isTipTop ? 'shadow-none border-b border-bordercolor md:border-none' : 'shadow-lg'}` : `${isTipTop ? 'bg-transparent md:bg-gradient-to-b md:from-[#00000099] md:to-transparent' : 'bg-white shadow-lg'}`}  transition-all duration-300 items-center`}>
                 <Link href='/'>
-                    <img src='/ic-logo.svg' className={`${isTipTop ? 'md:w-[120px]' : 'md:w-[60px]'} transition-all duration-300 cursor-pointer`} />
+                    <img src='/ic-logo.svg' className={`${isTipTop ? 'md:w-[90px]' : 'md:w-[60px]'} transition-all duration-300 cursor-pointer`} />
                 </Link>
                 <button
                     onClick={() => {
                         setisShowMobileNavOptions(true);
                     }}
                 >
-                    <MemoIcMenu className={`${activePage != 'home' ? 'text-primary' : `${isTipTop ? 'text-white' : 'text-primary'}`} transition-all duration-300 md:hidden`} />
+                    <MemoIcMenu className={`${activePage != 'home' ? 'text-primary' : `${isTipTop ? 'text-white' : 'text-primary'}`} transition-all duration-300 lg:hidden`} />
                 </button>
-                <div className='md:flex flex-row space-x-[3.125rem] hidden items-center'>
+                <div className='lg:flex flex-row space-x-[3.125rem] hidden items-center'>
                     <Link href='/'>
                         <a className={`uppercase font-karla hover:opacity-70 ${activePage != 'home' ? 'text-neutral' : `${isTipTop ? 'text-white text-shadow' : 'text-neutral'}`}`}>home</a>
                     </Link>
@@ -83,7 +83,7 @@ export const Navbar = ({ activePage }) => {
             <div className={`h-screen w-screen flex-col flex justify-between bg-white fixed top-0 left-0 z-40 ${isShowMobileNavOptions ? 'full-clip' : 'circle-clip'} transition-clip-path duration-500`}>
                 <div className='flex flex-row justify-between p-5 border-b border-bordercolor'>
                     <Link href='/'>
-                        <img src='/ic-logo.svg' className={`${isTipTop ? 'md:w-[120px]' : 'md:w-[60px]'} transition-all duration-300 c`} />
+                        <img src='/ic-logo.svg' className={`${isTipTop ? 'md:w-[90px]' : 'md:w-[60px]'} transition-all duration-300 c`} />
                     </Link>
                     <button
                         onClick={() => {
